@@ -1781,15 +1781,15 @@ border: none;
   }
 }
 
-input[type='text'], input[type='address'], input[type='url'], input[type='password'], input[type='email'], input[type="search"], input[type="tel"], input[type="date"], textarea {
+input[type='text'], input[type='address'], input[type='url'], input[type='password'], input[type='email'], input[type="search"], input[type="tel"], input[type="date"], textarea  , select{
   display: inline-block;
   width: 100%;
   font-size: 1rem;
   border-radius: 0.75em;
   color: #3d3d3d;
-  background-color: #fff;
+  background-color: #F5F7FA;
   border: 0;
-  border: 1px solid #d1d1d1;
+ 
   border-radius: 0;
   padding: 0.2rem 1rem 0;
   height: 3.6em;
@@ -2002,3 +2002,12 @@ header{
   background: linear-gradient(90deg, #3B9C43, #015C88);
 }
 
+.contact-book{
+  border-radius: 30px;
+background: linear-gradient(180deg, #F9FAFD 0%, rgba(249, 250, 253, 0.00) 78.65%);
+
+filter: blur(1px);
+}
+.Choose{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
