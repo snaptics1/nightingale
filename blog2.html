@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nightingale</title>
+    <link rel="icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .fisrt-h1 {
+            color: #FFF;
+
+            font-family: Poppins;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #015C88;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #015C88;
+        }
+
+        @media(max-width:768px) {
+            .fisrt-h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- top header -->
+    <div class="top-header bg-[#015C88] py-2 hidden md:block">
+        <div class="custom-container">
+            <div class="flex justify-between items-center">
+
+
+
+
+
+                <div class="flex justify-between px-4  items-center gap-2 text-white">
+                    <p class="text-white">Email: <a href="">info@nightingale@gmail.com</a></p> |
+                    <p class="text-white">Contact: <a href="">+91 9989030085</a></p>
+                </div>
+
+                <div class="flex justify-between px-4 space-x-6 items-center gap-2">
+                    <p class="text-white">Follow Us </p>
+                    <div class="space-x-3">
+                        <a target="_blank"
+                            href="https://www.facebook.com/people/Nightingale-Hospitals/61566409413396/"><i
+                                class="fa-brands text-white fa-facebook-f "></i></a>
+                        <a target="_blank" href="https://www.instagram.com/nightingale_hospital/"><i
+                                class="fa-brands text-white fa-instagram"></i></a>
+                        <a href="https://wa.me/+919989030085"><i class="fa-brands text-white fa-whatsapp"></i></a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- header -->
+    <div class="barside">
+
+        <div class=" w-[150px]    flex justify-center ml-5 mb-5 ">
+            <img src="./img/logo.png" class="w-full h-full object-cover" alt="">
+        </div>
+        <ul class="border-b-2 border-[#015C88] px-5 py-2">
+            <li><a href="index.html" class="">
+                    <i class="fa-solid fa-house text-2xl text-[#015C88] mr-2"></i>
+                    Home</a></li>
+            <li><a href="about.html">
+                    <i class="fa-solid fa-user text-2xl text-[#015C88] mr-2"></i>
+                    About Us</a></li>
+            <li class="dropdown"><a href="services.html">
+                    <i class="fa-solid fa-stethoscope text-2xl text-[#015C88] mr-2"></i>
+                    Services</a>
+
+            </li>
+            <li class="dropdown"><a href="blog.html">
+                    <i class="fa-solid fa-newspaper text-2xl text-[#015C88] mr-2"></i>
+                    Blogs</a>
+
+            </li>
+            <li class="dropdown"><a href="contact.html">
+                    <i class="fa-solid fa-phone text-2xl text-[#015C88] mr-2"></i>
+                    Contact Us</a>
+
+            </li>
+            <div class="nav-button cloud-button ">
+
+                <a href="#">Second Option &nbsp &nbsp<i class="fa-solid fa-calendar-days"></i></a>
+
+            </div>
+            <li>
+
+            </li>
+        </ul>
+
+        <div class="space-y-6 pt-2">
+            <div class="flex justify-start px-4  items-center gap-4">
+                <div class=" w-[20px] h-[20px]   flex justify-center items-center">
+                    <img src="./img/top-icon1.png" class="w-full brightness-50" alt="">
+                </div>
+                <div class="w-[70%] text-left">
+                    <h5 class="font-[Poppins] text-[#015C88]  font-semibold text-sm">Contatc Us</h5>
+                    <p class="font-[Poppins] text-[#015C88] text-sm">+91 9989030085</p>
+                </div>
+            </div>
+            <div class="flex justify-start px-4  items-center gap-4">
+                <div class=" w-[20px] h-[20px]   flex justify-center items-center">
+                    <img src="./img/top-icon2.png" class="w-full brightness-50" alt="">
+                </div>
+                <div class="w-[70%] text-left">
+                    <h5 class="font-[Poppins] text-[#015C88]  font-semibold text-sm">Email</h5>
+                    <p class="font-[Poppins] text-[#015C88] text-sm">info@nightingale
+                        @gmail.com</p>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+    <header data-aos="fade-up" data-aos-duration="1000">
+        <nav class="py-4  ">
+            <div class="logo">
+
+                <a href="index.html">
+                    <img src="./img/logo.png" alt="">
+                </a>
+
+            </div>
+            <div class="bar">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+
+
+            <div class="nav">
+
+                <div class="nav2">
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a>
+                          
+                        </li>
+                        <li ><a class="active" href="blog.html">Blogs</a>
+                          
+                        </li>
+                        <li class=""><a href="contact.html">Contact Us</a>
+                          
+                        </li>
+                        <!-- <li><a href="gallery.html">Gallery</a></li> -->
+
+
+
+                    </ul>
+                </div>
+
+
+            </div>
+            <!-- <div class="nav-button cloud-button">
+                <button>
+                    <a href="contact.html">Cloud</a>
+                </button>
+            </div> -->
+            <div class="nav-button">
+
+                <a href="#" class="text-nowrap">Second Opinion</a>
+
+            </div>
+        </nav>
+    </header>
+    <!-- main banner -->
+    <section
+        class="main-banner bg-[url('./img/blog-bg-img.png')] flex justify-center items-center h-[300px] bg-no-repeat bg-cover relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-[50%] h-[200px]   ">
+            <img src="./img/Layer_1.png" alt="">
+        </div>
+
+
+
+        <div class="custom-container">
+            <div class="flex justify-center items-end h-[100px]   md:flex-nowrap flex-wrap">
+                <div class="text-white text-center">
+                    <h6 class="text-4xl font-semibold text-[white]" data-aos="fade-up" data-aos-duration="1000">Understanding Hernia: Causes, Symptoms, and Treatment</h6>
+                    <p class="md:text-[20px] mt-3" data-aos="fade-up" data-aos-duration="1000">Learn about hernia types, causes, and treatments from the experts at
+                        Nightingale Hospital.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-10">
+        <article class="bg-white p-8 shadow-lg rounded-lg">
+            <section class="mb-8">
+                <h2 class="md:text-3xl sm:text-xl text-xl font-bold text-blue-800 mb-6">What is a Hernia?</h2>
+                <p class="text-gray-700 md:text-lg text-[15px] leading-relaxed">A hernia is a condition where an organ or tissue pushes
+                    through a weak spot in the surrounding muscles or connective tissue. While hernias commonly occur in
+                    the abdominal area, they can develop in other parts of the body as well.</p>
+                <p class="text-gray-700 md-text-lg text-[15px] leading-relaxed mt-4">The most common types of hernias include:</p>
+                <ul class="list-disc pl-6 text-gray-700 md:text-lg text-[15px] mt-2">
+                    <li><strong>Inguinal Hernia:</strong> Occurs in the groin area, more common in men.</li>
+                    <li><strong>Femoral Hernia:</strong> Found in the upper thigh, more common in women.</li>
+                    <li><strong>Umbilical Hernia:</strong> Happens near the belly button, often in infants or overweight
+                        adults.</li>
+                    <li><strong>Hiatal Hernia:</strong> Involves the stomach pushing up into the chest through the
+                        diaphragm.</li>
+                    <li><strong>Incisional Hernia:</strong> Occurs at the site of a previous surgical incision.</li>
+                </ul>
+            </section>
+
+            <section class="mb-8">
+                <h2 class="md:text-3xl sm:text-xl text-xl font-bold text-blue-800 mb-6">Causes of Hernia</h2>
+                <p class="text-gray-700 md:text-lg text-[15px] leading-relaxed">Hernias are caused by a combination of muscle weakness
+                    and strain. Common factors include:</p>
+                <ul class="list-disc pl-6 text-gray-700 md:text-lg text-[15px] mt-2">
+                    <li><strong>Congenital Weakness:</strong> Weak muscles present at birth.</li>
+                    <li><strong>Heavy Lifting:</strong> Frequent strain from lifting weights improperly.</li>
+                    <li><strong>Chronic Coughing or Sneezing:</strong> Conditions like COPD can exert pressure on the
+                        abdominal area.</li>
+                    <li><strong>Obesity:</strong> Excess weight increases strain on the abdominal wall.</li>
+                    <li><strong>Pregnancy:</strong> Can weaken muscles and increase abdominal pressure.</li>
+                    <li><strong>Constipation:</strong> Straining during bowel movements can contribute to hernia
+                        formation.</li>
+                </ul>
+            </section>
+
+            <section class="mb-8">
+                <h2 class="md:text-3xl sm:text-xl text-xl font-bold text-blue-800 mb-6">Symptoms of Hernia</h2>
+                <p class="text-gray-700 md:text-lg text-[15px] leading-relaxed">While some hernias are asymptomatic, common symptoms
+                    include:</p>
+                <ul class="list-disc pl-6 text-gray-700 md:text-lg text-[15px] mt-2">
+                    <li><strong>Visible Bulge:</strong> A noticeable lump in the affected area, which may disappear when
+                        lying down.</li>
+                    <li><strong>Pain or Discomfort:</strong> Especially during coughing, bending, or lifting.</li>
+                    <li><strong>Heaviness or Weakness:</strong> A dragging sensation in the abdomen or groin.</li>
+                    <li><strong>Digestive Issues:</strong> For hiatal hernias, symptoms may include heartburn, acid
+                        reflux, or difficulty swallowing.</li>
+                </ul>
+                <p class="text-gray-700 md-text-lg text-[15px] leading-relaxed mt-4">If left untreated, a hernia can lead to
+                    complications, such as strangulation, where the blood supply to the herniated tissue is cut off—a
+                    medical emergency requiring immediate attention.</p>
+            </section>
+
+            <section class="mb-8">
+                <h2 class="md:text-3xl sm:text-xl text-xl font-bold text-blue-800 mb-6">Treatment Options for Hernia</h2>
+                <p class="text-gray-700 md:text-lg text-[15px] leading-relaxed">Treatment depends on the type, size, and severity of
+                    the hernia.</p>
+
+                <h3 class="text-2xl font-semibold text-blue-600 mt-6">Lifestyle Modifications</h3>
+                <p class="text-gray-700 md:text-lg text-[15px] leading-relaxed mt-2">For small, asymptomatic hernias, your doctor may
+                    suggest lifestyle changes such as avoiding heavy lifting and maintaining a healthy weight.</p>
+
+                <h3 class="text-2xl font-semibold text-blue-600 mt-6">Medications</h3>
+                <p class="text-gray-700 md:text-lg text-[15px] leading-relaxed mt-2">Hiatal hernias often benefit from antacids or
+                    proton pump inhibitors to reduce acid reflux.</p>
+
+                <h3 class="text-2xl font-semibold text-blue-600 mt-6">Surgery</h3>
+                <p class="text-gray-700 md:text-lg text-[15px] leading-relaxed mt-2">Surgery is the most effective treatment for
+                    hernias. Options include:</p>
+                <ul class="list-disc pl-6 text-gray-700 md:text-lg text-[15px] mt-2">
+                    <li><strong>Open Surgery:</strong> The surgeon makes a single large incision to repair the hernia.
+                    </li>
+                    <li><strong>Laparoscopic Surgery:</strong> A minimally invasive procedure involving smaller
+                        incisions, quicker recovery, and less post-operative pain.</li>
+                    <li><strong>Robotic-Assisted Surgery:</strong> The latest innovation offering high precision.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="md:text-3xl sm:text-xl text-xl font-bold text-blue-800 mb-6">Why Choose Nightingale Hospital for Hernia Treatment?
+                </h2>
+                <ul class="list-disc pl-6 text-gray-700 md:text-lg text-[15px] mb-4">
+                    <li>Experienced surgeons specializing in advanced hernia repair techniques</li>
+                    <li>State-of-the-art facilities for diagnosis and treatment</li>
+                    <li>Comprehensive pre- and post-surgical care</li>
+                </ul>
+                <p class="text-gray-700 md:text-lg text-[15px] leading-relaxed">Don’t let a hernia disrupt your life. <a href="contact.html"
+                        class="text-blue-600 underline font-semibold">Contact us</a> today to schedule a consultation
+                    and regain your health and confidence.</p>
+            </section>
+        </article>
+    </main>
+
+
+
+    <!-- footer -->
+
+    <section class="bg-[url(./img/footer-bg.png)] bg-no-repeat bg-cover py-20">
+        <div class="custom-container w-[80%] md:w-[100%]">
+            <div class="flex justify-between items-center flex-wrap md:flex-nowrap">
+
+                <div class="md:-w-[60%] w-full" data-aos="fade-up" data-aos-anchor="#example-anchor"
+                    data-aos-offset="1000" data-aos-duration="1000">
+                    <div class="md:w-[50%] w-full ">
+                        <div class="">
+                            <img src="./img/Logo.png" class="w-[80%]" alt="">
+                        </div>
+                    </div>
+                    <div class="locationMap mt-2 w-[75%]">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.261405578179!2d78.50700661088244!3d17.35115000377914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb98658485a115%3A0x871146bda3e070fe!2sNightingale%20Hospital%20%7C%20Gynecology%20and%20Orthopedic%20specialist%20%7C%20Best%20Hospital%20in%20Saidabad!5e0!3m2!1sen!2sin!4v1736943426007!5m2!1sen!2sin"
+                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+
+                <div class="md:-w-[45%] w-full flex ">
+                    <div class="flex gap-10 md:gap-40 flex-wrap md:flex-nowrap">
+
+                        <!-- 1 -->
+                        <div class="md:w-[40%]" data-aos="fade-up" data-aos-duration="1500">
+                            <h1 class="font-bold text-xl md:text-2xl text-[#2A2D7A]">Quick Links</h1>
+
+                            <div class="Quick-line my-3"></div>
+
+
+
+                            <ul class=" py-7 space-y-2">
+                                <li>
+                                    <a href="index.html" class="text-[#969EB2] ">
+                                        <img src="./img/Symbol.png" alt="" class="inline-block"> Home </a>
+                                </li>
+
+                                <li>
+                                    <a href="about.html" class="text-[#969EB2] ">
+                                        <img src="./img/Symbol.png" alt="" class="inline-block"> About Us</a>
+                                </li>
+
+
+                                <li>
+                                    <a href="services.html" class="text-[#969EB2] ">
+                                        <img src="./img/Symbol.png" alt="" class="inline-block"> Services</a>
+                                </li>
+
+
+                                <li>
+                                    <a href="blog.html" class="text-[#969EB2] ">
+                                        <img src="./img/Symbol.png" alt="" class="inline-block"> Blog</a>
+                                </li>
+
+
+                                <li>
+                                    <a href="contact.html" class="text-[#969EB2] ">
+                                        <img src="./img/Symbol.png" alt="" class="inline-block"> Contact Us</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="md:w-[50%]" data-aos="fade-up" data-aos-duration="2500">
+                            <h1 class="font-bold text-xl md:text-2xl text-[#2A2D7A]">Contact</h1>
+
+                            <div class="Quick-line my-3"></div>
+
+                            <div class="py-5">
+                                <div class="flex gap-2">
+                                    <img src="./img/location.svg" alt="">
+                                    <p class="text-[#2A2D7A]"> Vinay Nagar Colony, Saidabad, Hyderabad
+                                    </p>
+                                </div>
+
+                                <div class="flex gap-2 py-3">
+                                    <img src="./img/email-icon.svg" alt="">
+                                    <p class="text-[#2A2D7A]">info@nightingale@gmail.com</p>
+                                </div>
+
+                                <div class="flex gap-2">
+                                    <img src="./img/phone-icon.svg" alt="">
+                                    <div class="px-2">
+                                        <p class="text-[#2A2D7A]">+91-9989030085</p>
+                                        <p class="text-[#2A2D7A]">040-35166511</p>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#015C88]">
+        <div class="custom-container py-3 w-[80%] md:w-[100%]">
+            <div class="flex justify-between items-center">
+                <div class="">
+                    <p class="text-white text-[9px] md:text-[16px]">Copyright © 2024 Nightingale Hospital All Rights
+                        Reserved.</p>
+                </div>
+                <div class="flex space-x-4 md:space-x-8">
+                    <a href="">
+                        <img src="./img/fb.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./img/insta.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./img/whatsapp.png" alt="">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.bar').click(function () {
+                $('.barside').toggleClass('barside1')
+            })
+        });
+
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+            // centeredSlides: true,
+            // autoplay: {
+            //     delay: 2500,
+            //     disableOnInteraction: false,
+            // },            
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+    <script>
+        const targets = [
+            { element: document.getElementById('starsCount'), count: 69, suffix: 'K' },
+
+            { element: document.getElementById('sponsorsCount'), count: 10, suffix: 'K' },
+            { element: document.getElementById('sponsorsCount2'), count: 20, suffix: '' }
+        ];
+
+        // Find the maximum count among all targets
+        const maxCount = Math.max(...targets.map(target => target.count));
+
+        // Function to animate count-up effect
+        function animateCountUp(target, duration) {
+            let currentCount = 0;
+            const effectiveDuration = Math.max(duration, 2000); // At least 2 seconds
+            const increment = Math.ceil(target.count / (duration / 50));
+
+            const interval = setInterval(() => {
+                currentCount += increment;
+                if (currentCount >= target.count) {
+                    clearInterval(interval);
+                    currentCount = target.count;
+                    target.element.textContent = currentCount + target.suffix;
+                } else {
+                    target.element.textContent = currentCount;
+                }
+            }, 50);
+        }
+
+        // Animate count-up for each target with adjusted duration
+        targets.forEach(target => {
+            const adjustedDuration = (target.count / maxCount) * 2000;
+            animateCountUp(target, adjustedDuration); // Adjust duration based on max count
+        });
+
+    </script>
+</body>
+
+</html>
