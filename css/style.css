@@ -2013,3 +2013,6 @@ filter: blur(1px);
 .Choose{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.blogPageMainContent p{
+  padding: 10px 10px 10px 5px;
+}
