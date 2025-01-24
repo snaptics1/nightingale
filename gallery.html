@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nightingale</title>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nightingale</title>
     <link rel="icon" href="./img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -20,13 +24,102 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
+        /* Colors */
+        .GalleryBanner{
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #015C88;
+            color: #ffffff;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .color-white {
+            color: #ffffff;
+        }
+
+        .color-black {
+            color: #252a32;
+        }
+
+        .color-light {
+            color: #f1f5f8;
+        }
+
+        .color-red {
+            color: #d32f2f;
+        }
+
+        .color-blue {
+            color: #148cb8;
+        }
+
+        /* Box Shadow */
+        .box-shadow {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+        }
+
+
+        /* Container */
+        .GallerYMainContainer {
+            max-width: 80rem;
+            width: 100%;
+            padding: 4rem 2rem;
+            margin: 0 auto;
+        }
+
+        /* Main Layout */
+        .main .GallerYMainContainer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Card Styles */
+        .card {
+            color: #252a32;
+            border-radius: 2px;
+            background: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+        }
+
+        /* Card Image */
+        .card-image {
+            position: relative;
+            display: block;
+            width: 100%;
+            padding-top: 70%;
+            background: #ffffff;
+        }
+
+        .card-image img {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Responsive Styles */
+        @media only screen and (max-width: 600px) {
+            .main .GallerYMainContainer {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 1rem;
+            }
+        }
+
         .fisrt-h1 {
             color: #FFF;
-
             font-family: Poppins;
-            font-size: 64px;
+            font-size: 40px;
             font-style: normal;
-            font-weight: 800;
+            font-weight: 600;
             line-height: normal;
         }
 
@@ -42,20 +135,18 @@
         @media(max-width:768px) {
             .fisrt-h1 {
                 font-size: 30px;
+                text-align: center;
             }
         }
     </style>
 </head>
 
 <body>
+
     <!-- top header -->
     <div class="top-header bg-[#015C88] py-2 hidden md:block">
         <div class="custom-container">
             <div class="flex justify-between items-center">
-
-
-
-
 
                 <div class="flex justify-between px-4  items-center gap-2 text-white">
                     <p class="text-white">Email: <a href="">info@nightingale@gmail.com</a></p> |
@@ -65,8 +156,11 @@
                 <div class="flex justify-between px-4 space-x-6 items-center gap-2">
                     <p class="text-white">Follow Us </p>
                     <div class="space-x-3">
-                        <a target="_blank" href="https://www.facebook.com/people/Nightingale-Hospitals/61566409413396/"><i class="fa-brands text-white fa-facebook-f "></i></a>
-                        <a target="_blank" href="https://www.instagram.com/nightingale_hospital/"><i class="fa-brands text-white fa-instagram"></i></a>
+                        <a target="_blank"
+                            href="https://www.facebook.com/people/Nightingale-Hospitals/61566409413396/"><i
+                                class="fa-brands text-white fa-facebook-f "></i></a>
+                        <a target="_blank" href="https://www.instagram.com/nightingale_hospital/"><i
+                                class="fa-brands text-white fa-instagram"></i></a>
                         <a href="https://wa.me/+919989030085"><i class="fa-brands text-white fa-whatsapp"></i></a>
 
                     </div>
@@ -180,12 +274,18 @@
                 <div class="nav2">
 
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a class="active" href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li class=""><a href="services.html">Services</a>
 
                         </li>
+                        <li class=""><a href="index.html#our-facilities">Facilities</a>
+
+                        </li>
                         <li class=""><a href="blog.html">Blogs</a>
+
+                        </li>
+                        <li class=""><a href="gallery.html">Gallery</a>
 
                         </li>
                         <li class=""><a href="contact.html">Contact Us</a>
@@ -212,146 +312,130 @@
             </div>
         </nav>
     </header>
-
+    <!-- main banner carousel -->
     <!-- main banner -->
-    <section
-        class="main-banner  bg-[url('./img/second-bg.png')] h-[300px] bg-no-repeat bg-cover relative overflow-hidden">
-
-
-
-
-        <div class="custom-container pt-10">
-            <div class="flex justify-center items-end h-[100px]   md:flex-nowrap flex-wrap">
-
-                <h6 class="text-4xl font-semibold text-[white]" data-aos="fade-up" data-aos-duration="1000">Urology
-                </h6>
-
-
-            </div>
+     <div class="GalleryBanner">
+        <div class="custom-container">
+            <h1 class="fisrt-h1">Explore Our Gallery</h1>
         </div>
-    </section>
 
-
-
-
-
-
-    <!-- our services -->
-
-    <main class="custom-container mx-auto w-[60%] my-20">
-        <div class="flex flex-wrap justify-between flex-wrap ">
-            <div class="flex flex-col ">
-    
-                <div class="bg-white ">
-                    <div class=" ">
-                        <div class="w-full px-4 ">
-    
-                            <div class="prose max-w-none">
-    
-                                <p class="py-4" data-aos="fade-up" data-aos-duration="1000">At Nightingale Hospital, our Urology Department is dedicated to providing advanced care for disorders of the urinary tract and male reproductive system. With cutting-edge technology and a team of experienced urologists, we ensure accurate diagnosis, effective treatments, and compassionate care.</p>
-    
-                                <h4 class="text-xl font-bold py-4">Our Expertise</h4>
-                                <p data-aos="fade-up" data-aos-duration="1000">We specialize in treating a wide range of urological conditions, including:</p>
-    
-                                <ul class="py-8 space-y-2">
-                                    <li><i class="fa-regular fa-circle-check mr-2 text-[#2A2D]"></i><b>Kidney Stones:</b> Comprehensive care for diagnosis, removal, and prevention of kidney stones.</li>
-                                    <li><i class="fa-regular fa-circle-check mr-2 text-[#2A2D]"></i><b>Urinary Tract Infections (UTIs):</b> Advanced treatment for recurring and complicated UTIs.</li>
-                                    <li><i class="fa-regular fa-circle-check mr-2 text-[#2A2D]"></i><b>Prostate Disorders:</b> Management of benign prostatic hyperplasia (BPH), prostatitis, and prostate cancer.</li>
-                                    <li><i class="fa-regular fa-circle-check mr-2 text-[#2A2D]"></i><b>Bladder Conditions:</b> Expertise in treating bladder infections, incontinence, and bladder cancer.</li>
-                                    <li><i class="fa-regular fa-circle-check mr-2 text-[#2A2D]"></i><b>Male Infertility:</b> Diagnosis and treatment of conditions affecting male reproductive health.</li>
-                                </ul>
-    
-                                <h4 class="text-xl font-bold py-4">Services We Offer</h4>
-                                <ul class="py-8 space-y-2 list-decimal px-4 md:px-0 space-y-4">
-                                    <li><b>Kidney Stone Management</b>
-                                        <ul class="list-disc px-4">
-                                            <li>Advanced techniques like shockwave lithotripsy (SWL), ureteroscopy, and laser treatments for stone removal.</li>
-                                            <li>Comprehensive dietary guidance to prevent recurrence.</li>
-                                        </ul>
-                                    </li>
-                                    <li><b>Prostate Care</b>
-                                        <ul class="list-disc px-4">
-                                            <li>Minimally invasive procedures for enlarged prostate (BPH) and prostate cancer.</li>
-                                            <li>Expert diagnosis and management tailored to individual needs.</li>
-                                        </ul>
-                                    </li>
-                                    <li><b>Bladder and Urinary Health</b>
-                                        <ul class="list-disc px-4">
-                                            <li>Treatment for incontinence, overactive bladder, and urinary retention.</li>
-                                            <li>Bladder reconstruction and advanced therapies for complex conditions.</li>
-                                        </ul>
-                                    </li>
-                                    <li><b>Male Reproductive Health</b>
-                                        <ul class="list-disc px-4">
-                                            <li>Expertise in varicocele repair, erectile dysfunction, and other fertility-related conditions.</li>
-                                            <li>Hormonal therapies and microsurgical techniques.</li>
-                                        </ul>
-                                    </li>
-                                    <li><b>Urological Cancer Care</b>
-                                        <ul class="list-disc px-4">
-                                            <li>Comprehensive management of kidney, bladder, prostate, and testicular cancers.</li>
-                                            <li>Multidisciplinary approach to diagnosis, treatment, and recovery.</li>
-                                        </ul>
-                                    </li>
-                                    <li><b>Minimally Invasive Urology</b>
-                                        <ul class="list-disc px-4">
-                                            <li>Laparoscopic and robotic-assisted surgeries for precise and effective treatments.</li>
-                                            <li>Faster recovery times and reduced post-surgery discomfort.</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-    
-                                <h4 class="text-xl font-bold py-4">Get in Touch</h4>
-                                <p data-aos="fade-up" data-aos-duration="1000">Prioritize your urinary and reproductive health with expert care. Book your consultation with our urologists at Nightingale Hospital today.</p>
-    
-                            </div>
-                        </div>
-    
-                    </div>
-    
+     </div>
+    <main class="main">
+        <div class="custom-container GallerYMainContainer">
+            <div class="card">
+                <div class="card-image">
+                    <a href="https://cdn.pixabay.com/photo/2023/05/22/10/49/houses-8010401_1280.jpg"
+                        data-fancybox="gallery" data-caption="Caption Images 1">
+                        <img src="https://cdn.pixabay.com/photo/2023/05/22/10/49/houses-8010401_1280.jpg"
+                            alt="Image Gallery">
+                    </a>
                 </div>
             </div>
-            <!-- <div class="w-full md:w-4/12 px-4 mb-8">
-                <div class=" rounded">
-                    <img src="./img/image15.png" class="w-full" alt="">
+            <div class="card">
+                <div class="card-image">
+                    <a href="https://cdn.pixabay.com/photo/2023/07/13/05/36/mountains-8123933_1280.jpg"
+                        data-fancybox="gallery" data-caption="Caption Images 1">
+                        <img src="https://cdn.pixabay.com/photo/2023/07/13/05/36/mountains-8123933_1280.jpg"
+                            alt="Image Gallery">
+                    </a>
                 </div>
-            </div> -->
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <a href="https://cdn.pixabay.com/photo/2022/12/12/21/35/stream-7651969_1280.jpg"
+                        data-fancybox="gallery" data-caption="Caption Images 1">
+                        <img src="https://cdn.pixabay.com/photo/2022/12/12/21/35/stream-7651969_1280.jpg"
+                            alt="Image Gallery">
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <a href="https://cdn.pixabay.com/photo/2022/10/24/20/22/muhlviertel-7544316_1280.jpg"
+                        data-fancybox="gallery" data-caption="Caption Images 1">
+                        <img src="https://cdn.pixabay.com/photo/2022/10/24/20/22/muhlviertel-7544316_1280.jpg"
+                            alt="Image Gallery">
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <a href="https://cdn.pixabay.com/photo/2019/09/13/11/47/mountains-4473760_1280.jpg"
+                        data-fancybox="gallery" data-caption="Caption Images 1">
+                        <img src="https://cdn.pixabay.com/photo/2019/09/13/11/47/mountains-4473760_1280.jpg"
+                            alt="Image Gallery">
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <a href="https://cdn.pixabay.com/photo/2019/05/29/20/01/sunset-4238445_1280.jpg"
+                        data-fancybox="gallery" data-caption="Caption Images 1">
+                        <img src="https://cdn.pixabay.com/photo/2019/05/29/20/01/sunset-4238445_1280.jpg"
+                            alt="Image Gallery">
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <a href="https://cdn.pixabay.com/photo/2022/11/13/18/09/canyon-7589820_1280.jpg"
+                        data-fancybox="gallery" data-caption="Caption Images 1">
+                        <img src="https://cdn.pixabay.com/photo/2022/11/13/18/09/canyon-7589820_1280.jpg"
+                            alt="Image Gallery">
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <a href="https://cdn.pixabay.com/photo/2022/11/02/22/33/autumn-7566201_1280.jpg"
+                        data-fancybox="gallery" data-caption="Caption Images 1">
+                        <img src="https://cdn.pixabay.com/photo/2022/11/02/22/33/autumn-7566201_1280.jpg"
+                            alt="Image Gallery">
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <a href="https://cdn.pixabay.com/photo/2022/12/09/22/55/trees-7646226_1280.jpg"
+                        data-fancybox="gallery" data-caption="Caption Images 1">
+                        <img src="https://cdn.pixabay.com/photo/2022/12/09/22/55/trees-7646226_1280.jpg"
+                            alt="Image Gallery">
+                    </a>
+                </div>
+            </div>
         </div>
     </main>
-    
 
 
 
     <!-- footer -->
 
-       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <div class="floating_btn">
         <a target="_blank" href="https://wa.me/">
-          <div class="contact_icon">
-            <i class="fa fa-phone my-float"></i>
-          </div>
+            <div class="contact_icon">
+                <i class="fa fa-phone my-float"></i>
+            </div>
         </a>
         <p class="text_icon">Talk to us?</p>
-      </div>
+    </div>
     <section class="bg-[url(./img/footer-bg.png)] bg-no-repeat bg-cover py-20">
         <div class="custom-container w-[80%] md:w-[100%]">
             <div class="flex justify-between items-center flex-wrap md:flex-nowrap">
 
-                <div class="md:-w-[45%] w-full flex justify-center" data-aos="fade-up" data-aos-anchor="#example-anchor"
+                <div class="md:-w-[60%] w-full" data-aos="fade-up" data-aos-anchor="#example-anchor"
                     data-aos-offset="1000" data-aos-duration="1000">
                     <div class="md:w-[50%] w-full ">
                         <div class="">
                             <img src="./img/logo.png" class="w-[80%]" alt="">
                         </div>
-
-                        <p class="pt-6 pb-2 text-[12px] text-[#2a2d7a]">Hyderabad - Nagarjuna Sagar Road near
-                            Santoshnagar, X’ Roads, Vinay Nagar Colony, Saidabad, Hyderabad, Telangana 500059 </p>
-
-
-
-
                     </div>
-
+                    <div class="locationMap mt-2 w-[75%]">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.261405578179!2d78.50700661088244!3d17.35115000377914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb98658485a115%3A0x871146bda3e070fe!2sNightingale%20Hospital%20%7C%20Gynecology%20and%20Orthopedic%20specialist%20%7C%20Best%20Hospital%20in%20Saidabad!5e0!3m2!1sen!2sin!4v1736943426007!5m2!1sen!2sin"
+                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
 
 
@@ -416,14 +500,14 @@
                                     <p class="text-[#2A2D7A]">info@nightingale@gmail.com</p>
                                 </div>
 
-                               <div class="flex gap-2">
-                                <img src="./img/phone-icon.svg" alt="">
-                                <div class="px-2">
-                                    <p class="text-[#2A2D7A]">+91-9989030085</p>
-                                    <p class="text-[#2A2D7A]">040-35166511</p>
+                                <div class="flex gap-2">
+                                    <img src="./img/phone-icon.svg" alt="">
+                                    <div class="px-2">
+                                        <p class="text-[#2A2D7A]">+91-9989030085</p>
+                                        <p class="text-[#2A2D7A]">040-35166511</p>
 
+                                    </div>
                                 </div>
-                            </div>
 
 
                             </div>
@@ -545,6 +629,22 @@
             animateCountUp(target, adjustedDuration); // Adjust duration based on max count
         });
 
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script>
+        $('[data-fancybox="gallery"]').fancybox({
+            buttons: [
+                "slideShow",
+                "thumbs",
+                "zoom",
+                "fullScreen",
+                "share",
+                "close"
+            ],
+            loop: false,
+            protect: true
+        });
     </script>
 </body>
 

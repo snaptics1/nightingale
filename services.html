@@ -71,7 +71,6 @@ line-height: normal;
             </div>
         </div>
     </div>
-
     <!-- header -->
     <div class="barside">
 
@@ -79,26 +78,36 @@ line-height: normal;
             <img src="./img/logo.png" class="w-full h-full object-cover" alt="">
         </div>
         <ul class="border-b-2 border-[#015C88] px-5 py-2">
-            <li><a href="index.html" class="">
-                <i class="fa-solid fa-house text-2xl text-[#015C88] mr-2"></i>
-                Home</a></li>
+            <li><a href="index.html">
+                    <i class="fa-solid fa-house text-2xl text-[#015C88] mr-2"></i>
+                    Home</a></li>
             <li><a href="about.html">
-                <i class="fa-solid fa-user text-2xl text-[#015C88] mr-2"></i>
-                About Us</a></li>
+                    <i class="fa-solid fa-user text-2xl text-[#015C88] mr-2"></i>
+                    About Us</a></li>
             <li class="dropdown"><a href="services.html">
-                <i class="fa-solid fa-stethoscope text-2xl text-[#015C88] mr-2"></i>
-                Services</a>
-              
+                    <i class="fa-solid fa-stethoscope text-2xl text-[#015C88] mr-2"></i>
+                    Services</a>
+
+            </li>
+            <li class="dropdown"><a href="index.html#our-facilities">
+                    <i class="fa-solid fa-stethoscope text-2xl text-[#015C88] mr-2"></i>
+                    Facilities</a>
+
             </li>
             <li class="dropdown"><a href="blog.html">
-                <i class="fa-solid fa-newspaper text-2xl text-[#015C88] mr-2"></i>
-                Blogs</a>
-              
+                    <i class="fa-solid fa-newspaper text-2xl text-[#015C88] mr-2"></i>
+                    Blogs</a>
+
+            </li>
+            <li class="dropdown"><a href="gallery.html">
+                    <i class="fa-solid fa-newspaper text-2xl text-[#015C88] mr-2"></i>
+                    Gallery</a>
+
             </li>
             <li class="dropdown"><a href="contact.html">
-                <i class="fa-solid fa-phone text-2xl text-[#015C88] mr-2"></i>
-                Contact Us</a>
-              
+                    <i class="fa-solid fa-phone text-2xl text-[#015C88] mr-2"></i>
+                    Contact Us</a>
+
             </li>
             <div class="nav-button cloud-button ">
 
@@ -131,18 +140,18 @@ line-height: normal;
                 </div>
             </div>
 
-         
 
-          
 
-          
+
+
+
         </div>
 
 
 
 
 
-       
+
 
     </div>
     <header data-aos="fade-up" data-aos-duration="1000">
@@ -164,16 +173,22 @@ line-height: normal;
                 <div class="nav2">
 
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a class="active" href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li ><a class="active" href="services.html">Services</a>
-                          
+                        <li class=""><a href="services.html">Services</a>
+
+                        </li>
+                        <li class=""><a href="index.html#our-facilities">Facilities</a>
+
                         </li>
                         <li class=""><a href="blog.html">Blogs</a>
-                          
+
+                        </li>
+                        <li class=""><a href="gallery.html">Gallery</a>
+
                         </li>
                         <li class=""><a href="contact.html">Contact Us</a>
-                          
+
                         </li>
                         <!-- <li><a href="gallery.html">Gallery</a></li> -->
 
@@ -196,6 +211,7 @@ line-height: normal;
             </div>
         </nav>
     </header>
+    <!-- main banner carousel -->
       <!-- main banner -->
 
       <section class="main-banner bg-[url('./img/bg-1.png')]  opacity-90 h-[300px] bg-no-repeat bg-cover relative overflow-hidden">
@@ -241,211 +257,124 @@ line-height: normal;
                     Our Nightingale Hospital specialties</h1>
             </div>
 
-
             <div class="w-[80%] mx-auto ">
                 <div class="flex justify-between items-center gap-10 flex-wrap">
 
                     <!-- 1 -->
-                    <div class="text-center py-6 md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 pb-6 servies-cart overflow-hidden"
+                    <div class="flex gap-5 pl-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
                         data-aos="fade-up" data-aos-duration="1000">
                         <div class="flex justify-center items-center">
-                            <img src="./img/services1.jpg" alt="">
+                            <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services1.jpg" alt="">
                         </div>
-
+                    <a href="services-individual.html">
                         <div class="text-center py-6">
-                            <h1 class="text-[#3B9C43] text-2xl font-semibold py-2">General Surgery</h1>
-
+                            <h1 class="text-[#3B9C43] text-xl font-semibold py-2">General Surgery</h1>
                         </div>
-
-                        <div class="text-center relative top-">
-                            <!-- <div
-                                class="w-[150px] mx-auto   bg-[#3B9C43] py-3 px-5 text-white rounded-full read-more-btn">
-
-                                <a href="#" class="font-semibold text-[white]">Read More</a>
-
-                            </div> -->
-                        </div>
-
+                    </a>
                     </div>
 
                     <!-- 2 -->
-                    <div class="text-center py-6 md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 pb-6 servies-cart overflow-hidden"
+                    <div class="flex gap-5 pl-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
                         data-aos="fade-up" data-aos-duration="1000">
                         <div class="flex justify-center items-center">
-                            <img src="./img/services2.jpg" alt="">
+                            <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services2.jpg" alt="">
                         </div>
 
-                        <div class="text-center py-6">
-                            <h1 class="text-[#3B9C43] text-2xl font-semibold py-2">Gynecology</h1>
+                          <a href="services-individual.html">
+                            <div class="text-center py-6">
+                                <h1 class="text-[#3B9C43] text-xl font-semibold py-2">Gynecology</h1>
+    
+                            </div>
+                        </a>
 
-                        </div>
 
-                        <div class="text-center relative top-">
-                            <!-- <div
-                                class="w-[150px] mx-auto   bg-[#3B9C43] py-3 px-5 text-white rounded-full read-more-btn">
-
-                                <a href="#" class="font-semibold text-[white]">Read More</a>
-
-                            </div> -->
-                        </div>
 
                     </div>
                     <!-- 3 -->
-                    <div class="text-center py-6 md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 pb-6 servies-cart overflow-hidden"
+                    <div class="flex gap-5 pl-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
                         data-aos="fade-up" data-aos-duration="1000">
                         <div class="flex justify-center items-center">
-                            <img src="./img/services3.jpg" alt="">
+                            <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services3.jpg" alt="">
                         </div>
 
-                        <div class="text-center py-6">
-                            <h1 class="text-[#3B9C43] text-2xl font-semibold py-2">Orthopedics</h1>
+                        <a href="services-individual.html">
+                            <div class="text-center py-6">
+                                <h1 class="text-[#3B9C43] text-xl font-semibold py-2">Orthopedics</h1>
+    
+                            </div>
+                        </a>
 
+
+                    </div>
+                    <div class="flex gap-5 pl-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
+                        data-aos="fade-up" data-aos-duration="1000">
+                        <div class="flex justify-center items-center">
+                            <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services3.jpg" alt="">
                         </div>
 
-                        <div class="text-center relative top-">
-                            <!-- <div
-                                class="w-[150px] mx-auto   bg-[#3B9C43] py-3 px-5 text-white rounded-full read-more-btn">
+                        <a href="services-individual.html">
+                            <div class="text-center py-6">
+                                <h1 class="text-[#3B9C43] text-xl font-semibold py-2"> General Medicine
+                                </h1>
+    
+                            </div>
+                        </a>
 
-                                <a href="#" class="font-semibold text-[white]">Read More</a>
-
-                            </div> -->
-                        </div>
 
                     </div>
 
                     <!-- 4 -->
-                    <div class="text-center py-6 md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 pb-6 servies-cart overflow-hidden"
-                        data-aos="fade-up" data-aos-duration="1000">
-                        <div class="flex justify-center items-center">
-                            <img src="./img/services4.jpg" alt="">
-                        </div>
 
-                        <div class="text-center py-6">
-                            <h1 class="text-[#3B9C43] text-2xl font-semibold py-2">ENT</h1>
-
-                        </div>
-
-                        <div class="text-center relative top-">
-                            <!-- <div
-                                class="w-[150px] mx-auto   bg-[#3B9C43] py-3 px-5 text-white rounded-full read-more-btn">
-
-                                <a href="#" class="font-semibold text-[white]">Read More</a>
-
-                            </div> -->
-                        </div>
-
-                    </div>
                     <!-- 5 -->
 
-                    <div class="text-center py-6 md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 pb-6 servies-cart overflow-hidden"
+                    <div class="flex gap-5 pl-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
                         data-aos="fade-up" data-aos-duration="1000">
                         <div class="flex justify-center items-center">
-                            <img src="./img/services5.jpg" alt="">
+                            <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services5.jpg" alt="">
                         </div>
 
-                        <div class="text-center py-6">
-                            <h1 class="text-[#3B9C43] text-2xl font-semibold py-2">Neurology</h1>
+                        <a href="services-individual.html">
+                            <div class="text-center py-6">
+                                <h1 class="text-[#3B9C43] text-xl font-semibold py-2">Neurology</h1>
+    
+                            </div>
+                        </a>
 
-                        </div>
-
-                        <div class="text-center relative top-">
-                            <!-- <div
-                                class="w-[150px] mx-auto   bg-[#3B9C43] py-3 px-5 text-white rounded-full read-more-btn">
-
-                                <a href="#" class="font-semibold text-[white]">Read More</a>
-
-                            </div> -->
-                        </div>
 
                     </div>
                     <!-- 6 -->
 
-                    <div class="text-center py-6 md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 pb-6 servies-cart overflow-hidden"
+                    <div class="flex gap-5 pl-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
                         data-aos="fade-up" data-aos-duration="1000">
                         <div class="flex justify-center items-center">
-                            <img src="./img/services6.jpg" alt="">
+                            <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services6.jpg" alt="">
                         </div>
 
+                       <a href="services-individual.html">
                         <div class="text-center py-6">
-                            <h1 class="text-[#3B9C43] text-2xl font-semibold py-2">Neurosurgery</h1>
+                            <h1 class="text-[#3B9C43] text-xl font-semibold py-2">Neurosurgery</h1>
 
                         </div>
+                       </a>
 
-                        <div class="text-center relative top-">
-                            <!-- <div
-                                class="w-[150px] mx-auto   bg-[#3B9C43] py-3 px-5 text-white rounded-full read-more-btn">
-
-                                <a href="#" class="font-semibold text-[white]">Read More</a>
-
-                            </div> -->
-                        </div>
 
                     </div>
-                    <div class="text-center py-6 md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 pb-6 servies-cart overflow-hidden"
+                    <div class="flex gap-5 pl-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
                         data-aos="fade-up" data-aos-duration="1000">
                         <div class="flex justify-center items-center">
-                            <img src="./img/services7.jpg" alt="">
+                            <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services6.jpg" alt="">
                         </div>
 
+                       <a href="services-individual.html">
                         <div class="text-center py-6">
-                            <h1 class="text-[#3B9C43] text-2xl font-semibold py-2">Surgical Oncology</h1>
+                            <h1 class="text-[#3B9C43] text-xl font-semibold py-2">Urology</h1>
 
                         </div>
+                       </a>
 
-                        <div class="text-center relative top-">
-                            <!-- <div
-                                class="w-[150px] mx-auto   bg-[#3B9C43] py-3 px-5 text-white rounded-full read-more-btn">
-
-                                <a href="#" class="font-semibold text-[white]">Read More</a>
-
-                            </div> -->
-                        </div>
-
-                    </div>
-                    <div class="text-center py-6 md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 pb-6 servies-cart overflow-hidden"
-                        data-aos="fade-up" data-aos-duration="1000">
-                        <div class="flex justify-center items-center">
-                            <img src="./img/services8.jpg" alt="">
-                        </div>
-
-                        <div class="text-center py-6">
-                            <h1 class="text-[#3B9C43] text-2xl font-semibold py-2">Plastic Surgery</h1>
-
-                        </div>
-
-                        <div class="text-center relative top-">
-                            <!-- <div
-                                class="w-[150px] mx-auto   bg-[#3B9C43] py-3 px-5 text-white rounded-full read-more-btn">
-
-                                <a href="#" class="font-semibold text-[white]">Read More</a>
-
-                            </div> -->
-                        </div>
-
-                    </div>
-                    <div class="text-center py-6 md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 pb-6 servies-cart overflow-hidden"
-                        data-aos="fade-up" data-aos-duration="1000">
-                        <div class="flex justify-center items-center">
-                            <img src="./img/services9.jpg" alt="">
-                        </div>
-
-                        <div class="text-center py-6">
-                            <h1 class="text-[#3B9C43] text-2xl font-semibold py-2">Urology</h1>
-
-                        </div>
-
-                        <div class="text-center relative top-">
-                            <!--<div
-                                class="w-[150px] mx-auto   bg-[#3B9C43] py-3 px-5 text-white rounded-full read-more-btn">
-
-                                <a href="#" class="font-semibold text-[white]">Read More</a>
-
-                            </div> -->
-                        </div>
-
+                    
                     </div>
                 </div>
-
             </div>
             <div class="text-center pt-16 flex justify-center items-center  ">
                 <div class="hidden md:block">
@@ -466,7 +395,16 @@ line-height: normal;
  
    <!-- footer -->
 
-   <section class="bg-[url(./img/footer-bg.png)] bg-no-repeat bg-cover py-20">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <div class="floating_btn">
+        <a target="_blank" href="https://wa.me/">
+          <div class="contact_icon">
+            <i class="fa fa-phone my-float"></i>
+          </div>
+        </a>
+        <p class="text_icon">Talk to us?</p>
+      </div>
+    <section class="bg-[url(./img/footer-bg.png)] bg-no-repeat bg-cover py-20">
     <div class="custom-container w-[80%] md:w-[100%]">
         <div class="flex justify-between items-center flex-wrap md:flex-nowrap">
 

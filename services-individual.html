@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nightingale</title>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nightingale</title>
     <link rel="icon" href="./img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -22,11 +26,10 @@
     <style>
         .fisrt-h1 {
             color: #FFF;
-
             font-family: Poppins;
-            font-size: 64px;
+            font-size: 40px;
             font-style: normal;
-            font-weight: 800;
+            font-weight: 600;
             line-height: normal;
         }
 
@@ -42,20 +45,18 @@
         @media(max-width:768px) {
             .fisrt-h1 {
                 font-size: 30px;
+                text-align: center;
             }
         }
     </style>
 </head>
+<body class="bg-gray-50 text-gray-800">
 
-<body>
+
     <!-- top header -->
     <div class="top-header bg-[#015C88] py-2 hidden md:block">
         <div class="custom-container">
             <div class="flex justify-between items-center">
-
-
-
-
 
                 <div class="flex justify-between px-4  items-center gap-2 text-white">
                     <p class="text-white">Email: <a href="">info@nightingale@gmail.com</a></p> |
@@ -65,8 +66,11 @@
                 <div class="flex justify-between px-4 space-x-6 items-center gap-2">
                     <p class="text-white">Follow Us </p>
                     <div class="space-x-3">
-                        <a target="_blank" href="https://www.facebook.com/people/Nightingale-Hospitals/61566409413396/"><i class="fa-brands text-white fa-facebook-f "></i></a>
-                        <a target="_blank" href="https://www.instagram.com/nightingale_hospital/"><i class="fa-brands text-white fa-instagram"></i></a>
+                        <a target="_blank"
+                            href="https://www.facebook.com/people/Nightingale-Hospitals/61566409413396/"><i
+                                class="fa-brands text-white fa-facebook-f "></i></a>
+                        <a target="_blank" href="https://www.instagram.com/nightingale_hospital/"><i
+                                class="fa-brands text-white fa-instagram"></i></a>
                         <a href="https://wa.me/+919989030085"><i class="fa-brands text-white fa-whatsapp"></i></a>
 
                     </div>
@@ -180,12 +184,18 @@
                 <div class="nav2">
 
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a class="active" href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li class=""><a href="services.html">Services</a>
 
                         </li>
+                        <li class=""><a href="index.html#our-facilities">Facilities</a>
+
+                        </li>
                         <li class=""><a href="blog.html">Blogs</a>
+
+                        </li>
+                        <li class=""><a href="gallery.html">Gallery</a>
 
                         </li>
                         <li class=""><a href="contact.html">Contact Us</a>
@@ -212,146 +222,110 @@
             </div>
         </nav>
     </header>
-
-    <!-- main banner -->
-    <section
-        class="main-banner  bg-[url('./img/second-bg.png')] h-[300px] bg-no-repeat bg-cover relative overflow-hidden">
+    <!-- main banner carousel -->
 
 
+  <!-- Hero Section -->
+  <section class="bg-[rgb(1,92,136)] text-white py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-4">Comprehensive Health Checkup</h2>
+      <p class="text-lg mb-6">Detailed insights into your health to ensure a healthier future.</p>
+    </div>
+  </section>
 
-
-        <div class="custom-container pt-10">
-            <div class="flex justify-center items-end h-[100px]   md:flex-nowrap flex-wrap">
-
-                <h6 class="text-4xl font-semibold text-[white]" data-aos="fade-up" data-aos-duration="1000">Urology
-                </h6>
-
-
-            </div>
+<div class="custom-container">
+      <!-- Service Details -->
+  <section class="py-12">
+    <div class="container mx-auto px-4">
+      <!-- About Service -->
+      <div class="bg-white shadow-md rounded-lg p-8 mb-12">
+        <h3 class="text-2xl font-semibold text-[rgb(1,92,136)] mb-4">About This Service</h3>
+        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+          Our Comprehensive Health Checkup is designed to give you a detailed analysis of your overall health. It includes assessments by specialists, blood tests, imaging services, and personalized recommendations to help you achieve optimal well-being.
+        </p>
+        <!-- Responsive Image -->
+        <div class="w-full overflow-hidden rounded-lg">
+          <img
+            src="https://img.freepik.com/free-photo/close-up-doctor-with-stethoscope_23-2149191355.jpg?t=st=1737720832~exp=1737724432~hmac=1c3233593d430a105aae4ccbfdf31a4c912e4dffe8660f20df63cd7f1729d01b&w=996"
+            alt="Healthcare Checkup"
+            class="w-full h-auto object-cover"
+          />
         </div>
-    </section>
-
-
-
-
-
-
-    <!-- our services -->
-
-    <main class="custom-container mx-auto w-[60%] my-20">
-        <div class="flex flex-wrap justify-between flex-wrap ">
-            <div class="flex flex-col ">
-    
-                <div class="bg-white ">
-                    <div class=" ">
-                        <div class="w-full px-4 ">
-    
-                            <div class="prose max-w-none">
-    
-                                <p class="py-4" data-aos="fade-up" data-aos-duration="1000">At Nightingale Hospital, our Urology Department is dedicated to providing advanced care for disorders of the urinary tract and male reproductive system. With cutting-edge technology and a team of experienced urologists, we ensure accurate diagnosis, effective treatments, and compassionate care.</p>
-    
-                                <h4 class="text-xl font-bold py-4">Our Expertise</h4>
-                                <p data-aos="fade-up" data-aos-duration="1000">We specialize in treating a wide range of urological conditions, including:</p>
-    
-                                <ul class="py-8 space-y-2">
-                                    <li><i class="fa-regular fa-circle-check mr-2 text-[#2A2D]"></i><b>Kidney Stones:</b> Comprehensive care for diagnosis, removal, and prevention of kidney stones.</li>
-                                    <li><i class="fa-regular fa-circle-check mr-2 text-[#2A2D]"></i><b>Urinary Tract Infections (UTIs):</b> Advanced treatment for recurring and complicated UTIs.</li>
-                                    <li><i class="fa-regular fa-circle-check mr-2 text-[#2A2D]"></i><b>Prostate Disorders:</b> Management of benign prostatic hyperplasia (BPH), prostatitis, and prostate cancer.</li>
-                                    <li><i class="fa-regular fa-circle-check mr-2 text-[#2A2D]"></i><b>Bladder Conditions:</b> Expertise in treating bladder infections, incontinence, and bladder cancer.</li>
-                                    <li><i class="fa-regular fa-circle-check mr-2 text-[#2A2D]"></i><b>Male Infertility:</b> Diagnosis and treatment of conditions affecting male reproductive health.</li>
-                                </ul>
-    
-                                <h4 class="text-xl font-bold py-4">Services We Offer</h4>
-                                <ul class="py-8 space-y-2 list-decimal px-4 md:px-0 space-y-4">
-                                    <li><b>Kidney Stone Management</b>
-                                        <ul class="list-disc px-4">
-                                            <li>Advanced techniques like shockwave lithotripsy (SWL), ureteroscopy, and laser treatments for stone removal.</li>
-                                            <li>Comprehensive dietary guidance to prevent recurrence.</li>
-                                        </ul>
-                                    </li>
-                                    <li><b>Prostate Care</b>
-                                        <ul class="list-disc px-4">
-                                            <li>Minimally invasive procedures for enlarged prostate (BPH) and prostate cancer.</li>
-                                            <li>Expert diagnosis and management tailored to individual needs.</li>
-                                        </ul>
-                                    </li>
-                                    <li><b>Bladder and Urinary Health</b>
-                                        <ul class="list-disc px-4">
-                                            <li>Treatment for incontinence, overactive bladder, and urinary retention.</li>
-                                            <li>Bladder reconstruction and advanced therapies for complex conditions.</li>
-                                        </ul>
-                                    </li>
-                                    <li><b>Male Reproductive Health</b>
-                                        <ul class="list-disc px-4">
-                                            <li>Expertise in varicocele repair, erectile dysfunction, and other fertility-related conditions.</li>
-                                            <li>Hormonal therapies and microsurgical techniques.</li>
-                                        </ul>
-                                    </li>
-                                    <li><b>Urological Cancer Care</b>
-                                        <ul class="list-disc px-4">
-                                            <li>Comprehensive management of kidney, bladder, prostate, and testicular cancers.</li>
-                                            <li>Multidisciplinary approach to diagnosis, treatment, and recovery.</li>
-                                        </ul>
-                                    </li>
-                                    <li><b>Minimally Invasive Urology</b>
-                                        <ul class="list-disc px-4">
-                                            <li>Laparoscopic and robotic-assisted surgeries for precise and effective treatments.</li>
-                                            <li>Faster recovery times and reduced post-surgery discomfort.</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-    
-                                <h4 class="text-xl font-bold py-4">Get in Touch</h4>
-                                <p data-aos="fade-up" data-aos-duration="1000">Prioritize your urinary and reproductive health with expert care. Book your consultation with our urologists at Nightingale Hospital today.</p>
-    
-                            </div>
-                        </div>
-    
-                    </div>
-    
-                </div>
-            </div>
-            <!-- <div class="w-full md:w-4/12 px-4 mb-8">
-                <div class=" rounded">
-                    <img src="./img/image15.png" class="w-full" alt="">
-                </div>
-            </div> -->
+      </div>
+      
+      <!-- Features -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition">
+          <div class="text-[rgb(1,92,136)] text-3xl mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-2 0-3 1.5-3 3s1 3 3 3 3-1.5 3-3-1-3-3-3z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 10c.554-1.1.832-2.5 1-3.5s-.554-1.5-1-2.5" />
+            </svg>
+          </div>
+          <h4 class="text-xl font-semibold text-gray-700 mb-3">Specialist Consultations</h4>
+          <p class="text-gray-600">Access consultations with top specialists across various fields.</p>
         </div>
-    </main>
-    
+        <div class="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition">
+          <div class="text-[rgb(1,92,136)] text-3xl mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 12l-4 4m0 0l4 4m-4-4h12m-4-4l4-4m0 0l-4-4" />
+            </svg>
+          </div>
+          <h4 class="text-xl font-semibold text-gray-700 mb-3">Advanced Diagnostics</h4>
+          <p class="text-gray-600">Comprehensive blood tests and imaging services for accurate results.</p>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition">
+          <div class="text-[rgb(1,92,136)] text-3xl mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 12v2m0-6v2m-6 4h6m6 4h-6m6-10h-6" />
+            </svg>
+          </div>
+          <h4 class="text-xl font-semibold text-gray-700 mb-3">Personalized Plans</h4>
+          <p class="text-gray-600">Tailored recommendations to suit your health goals and lifestyle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-
-
+  <!-- Call to Action -->
+  <section class="bg-[rgb(1,92,136)] text-white py-12">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">Book Your Appointment Today!</h2>
+      <p class="text-lg mb-6">Take the first step towards a healthier you. Contact us to learn more.</p>
+      <a href="contact.html" class="bg-white text-[rgb(1,92,136)] px-6 py-3 rounded-full font-bold hover:bg-gray-200">
+        Contact Us
+      </a>
+    </div>
+  </section>
+</div>
     <!-- footer -->
 
-       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <div class="floating_btn">
         <a target="_blank" href="https://wa.me/">
-          <div class="contact_icon">
-            <i class="fa fa-phone my-float"></i>
-          </div>
+            <div class="contact_icon">
+                <i class="fa fa-phone my-float"></i>
+            </div>
         </a>
         <p class="text_icon">Talk to us?</p>
-      </div>
+    </div>
     <section class="bg-[url(./img/footer-bg.png)] bg-no-repeat bg-cover py-20">
         <div class="custom-container w-[80%] md:w-[100%]">
             <div class="flex justify-between items-center flex-wrap md:flex-nowrap">
 
-                <div class="md:-w-[45%] w-full flex justify-center" data-aos="fade-up" data-aos-anchor="#example-anchor"
+                <div class="md:-w-[60%] w-full" data-aos="fade-up" data-aos-anchor="#example-anchor"
                     data-aos-offset="1000" data-aos-duration="1000">
                     <div class="md:w-[50%] w-full ">
                         <div class="">
                             <img src="./img/logo.png" class="w-[80%]" alt="">
                         </div>
-
-                        <p class="pt-6 pb-2 text-[12px] text-[#2a2d7a]">Hyderabad - Nagarjuna Sagar Road near
-                            Santoshnagar, X’ Roads, Vinay Nagar Colony, Saidabad, Hyderabad, Telangana 500059 </p>
-
-
-
-
                     </div>
-
+                    <div class="locationMap mt-2 w-[75%]">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.261405578179!2d78.50700661088244!3d17.35115000377914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb98658485a115%3A0x871146bda3e070fe!2sNightingale%20Hospital%20%7C%20Gynecology%20and%20Orthopedic%20specialist%20%7C%20Best%20Hospital%20in%20Saidabad!5e0!3m2!1sen!2sin!4v1736943426007!5m2!1sen!2sin"
+                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
 
 
@@ -416,14 +390,14 @@
                                     <p class="text-[#2A2D7A]">info@nightingale@gmail.com</p>
                                 </div>
 
-                               <div class="flex gap-2">
-                                <img src="./img/phone-icon.svg" alt="">
-                                <div class="px-2">
-                                    <p class="text-[#2A2D7A]">+91-9989030085</p>
-                                    <p class="text-[#2A2D7A]">040-35166511</p>
+                                <div class="flex gap-2">
+                                    <img src="./img/phone-icon.svg" alt="">
+                                    <div class="px-2">
+                                        <p class="text-[#2A2D7A]">+91-9989030085</p>
+                                        <p class="text-[#2A2D7A]">040-35166511</p>
 
+                                    </div>
                                 </div>
-                            </div>
 
 
                             </div>
@@ -545,6 +519,22 @@
             animateCountUp(target, adjustedDuration); // Adjust duration based on max count
         });
 
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script>
+        $('[data-fancybox="gallery"]').fancybox({
+            buttons: [
+                "slideShow",
+                "thumbs",
+                "zoom",
+                "fullScreen",
+                "share",
+                "close"
+            ],
+            loop: false,
+            protect: true
+        });
     </script>
 </body>
 

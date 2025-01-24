@@ -100,9 +100,19 @@
                     Services</a>
 
             </li>
+            <li class="dropdown"><a href="index.html#our-facilities">
+                    <i class="fa-solid fa-stethoscope text-2xl text-[#015C88] mr-2"></i>
+                    Facilities</a>
+
+            </li>
             <li class="dropdown"><a href="blog.html">
                     <i class="fa-solid fa-newspaper text-2xl text-[#015C88] mr-2"></i>
                     Blogs</a>
+
+            </li>
+            <li class="dropdown"><a href="gallery.html">
+                    <i class="fa-solid fa-newspaper text-2xl text-[#015C88] mr-2"></i>
+                    Gallery</a>
 
             </li>
             <li class="dropdown"><a href="contact.html">
@@ -179,7 +189,13 @@
                         <li class=""><a href="services.html">Services</a>
 
                         </li>
+                        <li class=""><a href="index.html#our-facilities">Facilities</a>
+
+                        </li>
                         <li class=""><a href="blog.html">Blogs</a>
+
+                        </li>
+                        <li class=""><a href="gallery.html">Gallery</a>
 
                         </li>
                         <li class=""><a href="contact.html">Contact Us</a>
@@ -206,9 +222,345 @@
             </div>
         </nav>
     </header>
-    <!-- main banner -->
+    <!-- main banner carousel -->
 
-    <section class="main-banner bg-[url('./img/bg-1.png')]  opacity-90 bg-no-repeat bg-cover relative overflow-hidden">
+    <div id="carousel" class="relative w-full">
+        <!-- Carousel wrapper -->
+        <div class="relative overflow-hidden homePageBanner">
+            <!-- Slides -->
+            <div class="flex w-full h-full transition-transform duration-700 ease-in-out" id="carousel-slides">
+                <!-- Slide 1 -->
+                <div class="w-full h-full flex-shrink-0">
+                    <section
+                        class="main-banner bg-[url('./img/bg-1.png')]  h-full  opacity-90 bg-no-repeat bg-cover relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-[200px] h-[200px]   ">
+                            <img src="./img/hero-banner-1.svg" alt="">
+                        </div>
+                        <div class="absolute top-0 right-0 w-[200px] h-[200px]  z-10 ">
+                            <img src="./img/hero-banner-3.png" alt="">
+                        </div>
+
+                        <div class="absolute -top-20 -right-20 w-[700px] h-[600px]  -z-1 hidden md:block">
+                            <img src="./img/Ellipse-1.png" alt="">
+                        </div>
+                        <div class="custom-container pt-10">
+                            <div class="flex justify-between items-end   md:flex-nowrap flex-wrap">
+                                <div class=" w-full  justify-center items-center">
+                                    <div class="relative text-white w-[80%] md:pt-20 pt-2 md:pt-0  mx-auto md:mx-0">
+                                        <div class="absolute top-10 -left-10 w-[200px] h-[200px]   ">
+                                            <img src="./img/hero-banner-2.svg" alt="">
+                                        </div>
+                                        <h1 class=" fisrt-h1 pb-5" data-aos="fade-up" data-aos-duration="1500">A Legacy
+                                            of Trust in Multispeciality Healthcare</h1>
+                                        <p class="pb-10" data-aos="fade-up" data-aos-duration="2000"> Providing
+                                            comprehensive healthcare solutions with a legacy of trust and unmatched
+                                            expertise.
+                                        </p>
+                                    </div>
+                                    <div class="  " data-aos="fade-up" data-aos-duration="2500">
+                                        <div
+                                            class="nav-button cloud-button ml-[40px]    md:ml-0  text-white text-[10px] md:text-[16px]">
+
+                                            <a href="contact.html" class="font-semibold text-[white]   ">Book
+                                                Appointment &nbsp <i class="fa-solid fa-arrow-right"></i> </a>
+
+                                        </div>
+
+                                        <div class="nav-button bg-[transparent]  text-white pt-16 py-5">
+
+                                            <img src="./img/google-review-img.png" class="w-[240px]" alt="">
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="md:w-[50%] w-full flex justify-center items-center relative z-3"
+                                    data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="">
+                                        <img src="./img/main-banner-img-right.png" class="w-full" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Slide 2 -->
+                <div class="w-full h-full flex-shrink-0 bg-gray-200 flex items-center justify-center">
+                    <div class="w-full h-full flex-shrink-0">
+                        <section
+                            class="main-banner bg-[url('./img/bg-1.png')]  h-full  opacity-90 bg-no-repeat bg-cover relative overflow-hidden">
+                            <div class="absolute top-0 left-0 w-[200px] h-[200px]   ">
+                                <img src="./img/hero-banner-1.svg" alt="">
+                            </div>
+                            <div class="absolute top-0 right-0 w-[200px] h-[200px]  z-10 ">
+                                <img src="./img/hero-banner-3.png" alt="">
+                            </div>
+
+                            <div class="absolute -top-20 -right-20 w-[700px] h-[600px]  -z-1 hidden md:block">
+                                <img src="./img/Ellipse-1.png" alt="">
+                            </div>
+                            <div class="custom-container pt-10">
+                                <div class="flex justify-between items-end   md:flex-nowrap flex-wrap">
+                                    <div class=" w-full  justify-center items-center">
+                                        <div class="relative text-white w-[80%] md:pt-20 pt-2 md:pt-0  mx-auto md:mx-0">
+                                            <div class="absolute top-10 -left-10 w-[200px] h-[200px]   ">
+                                                <img src="./img/hero-banner-2.svg" alt="">
+                                            </div>
+                                            <h1 class=" fisrt-h1 pb-5" data-aos="fade-up" data-aos-duration="1500">
+                                                Comprehensive Care with Expert General Surgery and Medicine.
+                                            </h1>
+                                            <p class="pb-10" data-aos="fade-up" data-aos-duration="2000">Our specialists
+                                                ensure personalized care tailored to your health requirements.
+
+                                            </p>
+                                        </div>
+                                        <div class="  " data-aos="fade-up" data-aos-duration="2500">
+                                            <div
+                                                class="nav-button cloud-button ml-[40px]    md:ml-0  text-white text-[10px] md:text-[16px]">
+
+                                                <a href="contact.html" class="font-semibold text-[white]   ">Book
+                                                    Appointment &nbsp <i class="fa-solid fa-arrow-right"></i> </a>
+
+                                            </div>
+
+                                            <div class="nav-button bg-[transparent]  text-white pt-16 py-5">
+
+                                                <img src="./img/google-review-img.png" class="w-[240px]" alt="">
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="md:w-[50%] w-full flex justify-center items-center relative z-3"
+                                        data-aos="fade-up" data-aos-duration="2000">
+                                        <div class="">
+                                            <img src="./img/main-banner-img-right.png" class="w-full" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="w-full h-full flex-shrink-0 bg-gray-300 flex items-center justify-center">
+                    <div class="w-full h-full flex-shrink-0">
+                        <section
+                            class="main-banner bg-[url('./img/bg-1.png')]  h-full  opacity-90 bg-no-repeat bg-cover relative overflow-hidden">
+                            <div class="absolute top-0 left-0 w-[200px] h-[200px]   ">
+                                <img src="./img/hero-banner-1.svg" alt="">
+                            </div>
+                            <div class="absolute top-0 right-0 w-[200px] h-[200px]  z-10 ">
+                                <img src="./img/hero-banner-3.png" alt="">
+                            </div>
+
+                            <div class="absolute -top-20 -right-20 w-[700px] h-[600px]  -z-1 hidden md:block">
+                                <img src="./img/Ellipse-1.png" alt="">
+                            </div>
+                            <div class="custom-container pt-10">
+                                <div class="flex justify-between items-end   md:flex-nowrap flex-wrap">
+                                    <div class=" w-full  justify-center items-center">
+                                        <div class="relative text-white w-[80%] md:pt-20 pt-2 md:pt-0  mx-auto md:mx-0">
+                                            <div class="absolute top-10 -left-10 w-[200px] h-[200px]   ">
+                                                <img src="./img/hero-banner-2.svg" alt="">
+                                            </div>
+                                            <h1 class=" fisrt-h1 pb-5" data-aos="fade-up" data-aos-duration="1500">
+                                                Compassionate Obstetrics and Gynecology Care for Every Stage of Life
+                                            </h1>
+                                            <p class="pb-10" data-aos="fade-up" data-aos-duration="2000"> From maternity
+                                                care to advanced gynecological treatments, your health is our priority.
+
+                                            </p>
+                                        </div>
+                                        <div class="  " data-aos="fade-up" data-aos-duration="2500">
+                                            <div
+                                                class="nav-button cloud-button ml-[40px]    md:ml-0  text-white text-[10px] md:text-[16px]">
+
+                                                <a href="contact.html" class="font-semibold text-[white]   ">Book
+                                                    Appointment &nbsp <i class="fa-solid fa-arrow-right"></i> </a>
+
+                                            </div>
+
+                                            <div class="nav-button bg-[transparent]  text-white pt-16 py-5">
+
+                                                <img src="./img/google-review-img.png" class="w-[240px]" alt="">
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="md:w-[50%] w-full flex justify-center items-center relative z-3"
+                                        data-aos="fade-up" data-aos-duration="2000">
+                                        <div class="">
+                                            <img src="./img/main-banner-img-right.png" class="w-full" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="w-full h-full flex-shrink-0 bg-gray-300 flex items-center justify-center">
+                    <div class="w-full h-full flex-shrink-0">
+                        <section
+                            class="main-banner bg-[url('./img/bg-1.png')]  h-full  opacity-90 bg-no-repeat bg-cover relative overflow-hidden">
+                            <div class="absolute top-0 left-0 w-[200px] h-[200px]   ">
+                                <img src="./img/hero-banner-1.svg" alt="">
+                            </div>
+                            <div class="absolute top-0 right-0 w-[200px] h-[200px]  z-10 ">
+                                <img src="./img/hero-banner-3.png" alt="">
+                            </div>
+
+                            <div class="absolute -top-20 -right-20 w-[700px] h-[600px]  -z-1 hidden md:block">
+                                <img src="./img/Ellipse-1.png" alt="">
+                            </div>
+                            <div class="custom-container pt-10">
+                                <div class="flex justify-between items-end   md:flex-nowrap flex-wrap">
+                                    <div class=" w-full  justify-center items-center">
+                                        <div class="relative text-white w-[80%] md:pt-20 pt-2 md:pt-0  mx-auto md:mx-0">
+                                            <div class="absolute top-10 -left-10 w-[200px] h-[200px]   ">
+                                                <img src="./img/hero-banner-2.svg" alt="">
+                                            </div>
+                                            <h1 class=" fisrt-h1 pb-5" data-aos="fade-up" data-aos-duration="1500">
+                                                Advanced Orthopedic Care to Restore Your Mobility.
+                                            </h1>
+                                            <p class="pb-10" data-aos="fade-up" data-aos-duration="2000">Specialized
+                                                treatments for fractures, joint replacements, sports injuries, and more.
+
+                                            </p>
+                                        </div>
+                                        <div class="  " data-aos="fade-up" data-aos-duration="2500">
+                                            <div
+                                                class="nav-button cloud-button ml-[40px]    md:ml-0  text-white text-[10px] md:text-[16px]">
+
+                                                <a href="contact.html" class="font-semibold text-[white]   ">Book
+                                                    Appointment &nbsp <i class="fa-solid fa-arrow-right"></i> </a>
+
+                                            </div>
+
+                                            <div class="nav-button bg-[transparent]  text-white pt-16 py-5">
+
+                                                <img src="./img/google-review-img.png" class="w-[240px]" alt="">
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="md:w-[50%] w-full flex justify-center items-center relative z-3"
+                                        data-aos="fade-up" data-aos-duration="2000">
+                                        <div class="">
+                                            <img src="./img/main-banner-img-right.png" class="w-full" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="w-full h-full flex-shrink-0 bg-gray-300 flex items-center justify-center">
+                    <div class="w-full h-full flex-shrink-0">
+                        <section
+                            class="main-banner bg-[url('./img/bg-1.png')]  h-full  opacity-90 bg-no-repeat bg-cover relative overflow-hidden">
+                            <div class="absolute top-0 left-0 w-[200px] h-[200px]   ">
+                                <img src="./img/hero-banner-1.svg" alt="">
+                            </div>
+                            <div class="absolute top-0 right-0 w-[200px] h-[200px]  z-10 ">
+                                <img src="./img/hero-banner-3.png" alt="">
+                            </div>
+
+                            <div class="absolute -top-20 -right-20 w-[700px] h-[600px]  -z-1 hidden md:block">
+                                <img src="./img/Ellipse-1.png" alt="">
+                            </div>
+                            <div class="custom-container pt-10">
+                                <div class="flex justify-between items-end   md:flex-nowrap flex-wrap">
+                                    <div class="md:w-full w-full  justify-center items-center">
+                                        <div class="relative text-white w-[80%] md:pt-20 pt-2 md:pt-0  mx-auto md:mx-0">
+                                            <div class="absolute top-10 -left-10 w-[200px] h-[200px]   ">
+                                                <img src="./img/hero-banner-2.svg" alt="">
+                                            </div>
+                                            <h1 class=" fisrt-h1 pb-5" data-aos="fade-up" data-aos-duration="1500">
+                                                Comprehensive Neurology Solutions for Complex Conditions.
+
+                                            </h1>
+                                            <p class="pb-10" data-aos="fade-up" data-aos-duration="2000">Providing
+                                                expert diagnosis and treatment for a wide range of neurological
+                                                disorders.
+
+
+                                            </p>
+                                        </div>
+                                        <div class="  " data-aos="fade-up" data-aos-duration="2500">
+                                            <div
+                                                class="nav-button cloud-button ml-[40px]    md:ml-0  text-white text-[10px] md:text-[16px]">
+
+                                                <a href="contact.html" class="font-semibold text-[white]   ">Book
+                                                    Appointment &nbsp <i class="fa-solid fa-arrow-right"></i> </a>
+
+                                            </div>
+
+                                            <div class="nav-button bg-[transparent]  text-white pt-16 py-5">
+
+                                                <img src="./img/google-review-img.png" class="w-[240px]" alt="">
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="md:w-[50%] w-full flex justify-center items-center relative z-3"
+                                        data-aos="fade-up" data-aos-duration="2000">
+                                        <div class="">
+                                            <img src="./img/main-banner-img-right.png" class="w-full" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Indicators -->
+        <div class="absolute flex justify-center w-full bottom-4">
+            <button class="w-3 h-3 mx-1 bg-gray-400 rounded-full focus:outline-none" onclick="goToSlide(0)"
+                aria-label="Slide 1"></button>
+            <button class="w-3 h-3 mx-1 bg-gray-400 rounded-full focus:outline-none" onclick="goToSlide(1)"
+                aria-label="Slide 2"></button>
+            <button class="w-3 h-3 mx-1 bg-gray-400 rounded-full focus:outline-none" onclick="goToSlide(2)"
+                aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Controls -->
+        <button class="absolute top-0 left-0 flex items-center justify-center h-full px-4 focus:outline-none"
+            onclick="prevSlide()" aria-label="Previous">
+            <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+        </button>
+        <button class="absolute top-0 right-0 flex items-center justify-center h-full px-4 focus:outline-none"
+            onclick="nextSlide()" aria-label="Next">
+            <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+        </button>
+    </div>
+
+
+    <!-- <section class="main-banner bg-[url('./img/bg-1.png')]  opacity-90 bg-no-repeat bg-cover relative overflow-hidden">
         <div class="absolute top-0 left-0 w-[200px] h-[200px]   ">
             <img src="./img/hero-banner-1.svg" alt="">
         </div>
@@ -260,7 +612,172 @@
 
             </div>
         </div>
+    </section> -->
+
+    <!-- our services -->
+
+    <section class="relative bg-[url(./img/our-services-bg.png)] py-10">
+        <div class="absolute bottom-0 right-0  h-[200px]  z-10 ">
+            <img src="./img/Objects.png" alt="">
+        </div>
+        <div class="absolute top-0 left-0 w-[100px] h-[100px] md:w-[250px] md:h-[250px] ">
+            <img src="./img/services-bg-icon.png" alt="">
+        </div>
+        <div class="custom-container bg-white rounded-3xl pb-10">
+
+
+            <div class="text-center pt-10 pb-20">
+                <h6 class="py-4 text-2xl font-semibold text-[#3B9C43]" data-aos="fade-up" data-aos-duration="1000">OUR
+                    SERVICES</h6>
+                <h1 class="text-2xl md:text-4xl text-[#015C88] font-bold" data-aos="fade-up" data-aos-duration="1500">
+                    Our Nightingale Hospital Specialties</h1>
+            </div>
+
+
+            <div class="w-[80%] mx-auto ">
+                <div class="flex justify-between items-center gap-10 flex-wrap">
+
+                    <!-- 1 -->
+                    <div class="flex gap-5 pl-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
+                        data-aos="fade-up" data-aos-duration="1000">
+                        <div class="flex justify-center items-center">
+                            <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services1.jpg" alt="">
+                        </div>
+                        <a href="services-individual.html">
+                            <div class="text-center py-6">
+                                <h1 class="text-[#3B9C43] text-xl font-semibold py-2">General Surgery</h1>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="flex gap-5 pl-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
+                        data-aos="fade-up" data-aos-duration="1000">
+                        <div class="flex justify-center items-center">
+                            <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services2.jpg" alt="">
+                        </div>
+
+                        <a href="services-individual.html">
+                            <div class="text-center py-6">
+                                <h1 class="text-[#3B9C43] text-xl font-semibold py-2">Gynecology</h1>
+    
+                            </div>
+                        </a>
+
+
+
+                    </div>
+                    <!-- 3 -->
+                    <div class="flex gap-5 pl-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
+                        data-aos="fade-up" data-aos-duration="1000">
+                        <div class="flex justify-center items-center">
+                            <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services3.jpg" alt="">
+                        </div>
+
+                        <a href="services-individual.html">
+                            <div class="text-center py-6">
+                                <h1 class="text-[#3B9C43] text-xl font-semibold py-2">Orthopedics</h1>
+    
+                            </div>
+                        </a>
+
+
+                    </div>
+                    <div class="flex gap-5 pl-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
+                        data-aos="fade-up" data-aos-duration="1000">
+                        <div class="flex justify-center items-center">
+                            <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services3.jpg" alt="">
+                        </div>
+
+                      <a href="services-individual.html">
+                        <div class="text-center py-6">
+                            <h1 class="text-[#3B9C43] text-xl font-semibold py-2"> General Medicine
+                            </h1>
+
+                        </div>
+                      </a>
+
+
+                    </div>
+
+                    <!-- 4 -->
+
+                    <!-- 5 -->
+
+                    <div class="flex gap-5 pl-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
+                        data-aos="fade-up" data-aos-duration="1000">
+                        <div class="flex justify-center items-center">
+                            <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services5.jpg" alt="">
+                        </div>
+
+                       <a href="services-individual.html">
+                        <div class="text-center py-6">
+                            <h1 class="text-[#3B9C43] text-xl font-semibold py-2">Neurology</h1>
+
+                        </div>
+                       </a>
+
+
+                    </div>
+                    <!-- 6 -->
+
+                    <div class="flex gap-5 pl-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
+                        data-aos="fade-up" data-aos-duration="1000">
+                        <div class="flex justify-center items-center">
+                            <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services6.jpg" alt="">
+                        </div>
+
+                       <a href="services-individual.html">
+                        <div class="text-center py-6">
+                            <h1 class="text-[#3B9C43] text-xl font-semibold py-2">Neurosurgery</h1>
+
+                        </div>
+                       </a>
+
+
+                    </div>
+                    <!-- <div class="flex gap-5 pl-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
+                        data-aos="fade-up" data-aos-duration="1000">
+                        <div class="flex justify-center items-center">
+                            <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services6.jpg" alt="">
+                        </div>
+
+                        <div class="text-center py-6">
+                            <h1 class="text-[#3B9C43] text-xl font-semibold py-2">Urology</h1>
+
+                        </div>
+
+                    
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center pt-16 flex justify-center items-center  ">
+            <div class="hidden md:block">
+                <img src="./img/HorizontalDivider.png" alt="">
+            </div>
+            <div class="w-[350px] rounded-full   bg-[#3B9C43] py-3 px-10 text-white">
+
+                <a href="services.html" class="font-semibold text-[white] text-nowrap">View All</a>
+
+            </div>
+            <div class=" hidden md:block">
+                <img src="./img/HorizontalDivider.png" alt="">
+            </div>
+        </div>
+
+
+        </div>
+
+
+
+        <!-- <div class="absolute bottom-0 right-0 w-[250px] h-[250px] ">
+                <img src="./img/services-bg-icon.png" alt="">
+            </div> -->
     </section>
+
 
     <!-- about section -->
 
@@ -317,7 +834,8 @@
                                         <img src="./img/lets-icons_check-fill.png" class="w-[100%]" alt="">
                                     </div>
 
-                                    <p class="font-bold">24x7 Emergency Services</p>
+                                    <p class="font-bold">Outpatient Services
+                                    </p>
 
                                 </div>
                             </div>
@@ -331,7 +849,7 @@
                                         <img src="./img/lets-icons_check-fill.png" class="w-[100%]" alt="">
                                     </div>
 
-                                    <p class="font-bold">Affordable Treatment Options</p>
+                                    <p class="font-bold">Multi Speciality and Super Speciality OP & IP</p>
 
                                 </div>
                             </div>
@@ -342,7 +860,8 @@
                                         <img src="./img/lets-icons_check-fill.png" class="w-[100%]" alt="">
                                     </div>
 
-                                    <p class="font-bold">Patient-Centered Care</p>
+                                    <p class="font-bold">24 Hours Emergency Services
+                                    </p>
 
                                 </div>
                             </div>
@@ -353,21 +872,40 @@
                                         <img src="./img/lets-icons_check-fill.png" class="w-[100%]" alt="">
                                     </div>
 
-                                    <p class="font-bold">Advanced Medical Equipment</p>
+                                    <p class="font-bold">Round the clock diagnostic Services
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class=" w-full">
+                                <div class="flex gap-5 items-center">
+                                    <div class="w-[30px]">
+                                        <img src="./img/lets-icons_check-fill.png" class="w-[100%]" alt="">
+                                    </div>
+
+                                    <p class="font-bold">ICU
+
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class=" w-full">
+                                <div class="flex gap-5 items-center">
+                                    <div class="w-[30px]">
+                                        <img src="./img/lets-icons_check-fill.png" class="w-[100%]" alt="">
+                                    </div>
+
+                                    <p class="font-bold">Operation Theaters
+
+
+                                    </p>
 
                                 </div>
                             </div>
 
 
                         </div>
-                        <!-- <div class="my-3">
-                            <div
-                            class=" w-[170px] hidden md:block nav-button bg-[#2A2D7A]  hover:text-[#e7c873] py-3 px-5 text-white transition duration-75 rounded-lg">
-            
-                            <a href="#" class="font-semibold text-[white]   ">Learn More</a>
-            
-                        </div>
-                        </div> -->
+
 
 
                     </div>
@@ -384,186 +922,277 @@
 
 
 
-    <!-- our services -->
-
-    <section class="relative bg-[url(./img/our-services-bg.png)] py-10">
-        <div class="absolute bottom-0 right-0  h-[200px]  z-10 ">
+    <section class="relative bg-[url(./img/our-services-bg.png)] py-10" id="our-facilities">
+        <div class="absolute bottom-0 right-0 h-[200px] z-10">
             <img src="./img/Objects.png" alt="">
         </div>
-        <div class="absolute top-0 left-0 w-[100px] h-[100px] md:w-[250px] md:h-[250px] ">
+        <div class="absolute top-0 left-0 w-[100px] h-[100px] md:w-[250px] md:h-[250px]">
             <img src="./img/services-bg-icon.png" alt="">
         </div>
         <div class="custom-container bg-white rounded-3xl pb-10">
 
-
             <div class="text-center pt-10 pb-20">
-                <h6 class="py-4 text-2xl font-semibold text-[#3B9C43]" data-aos="fade-up" data-aos-duration="1000">OUR
-                    SERVICES</h6>
                 <h1 class="text-2xl md:text-4xl text-[#015C88] font-bold" data-aos="fade-up" data-aos-duration="1500">
-                    Our Nightingale Hospital specialties</h1>
+                    OUR FACILITIES</h1>
             </div>
 
+            <div class="w-[80%] mx-auto">
+                <h2 class="text-2xl md:text-2xl pb-8 text-[#3B9C43] font-bold" data-aos="fade-up"
+                    data-aos-duration="1500">Diagnostic Facilities :</h2>
+                <div class="flex justify-start items-center gap-10 flex-wrap">
 
-            <div class="w-[80%] mx-auto ">
-                <div class="flex justify-between items-center gap-10 flex-wrap">
-
-                    <!-- 1 -->
-                    <div class="text-center py-6 md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 pb-6 servies-cart overflow-hidden"
+                    <!-- Display first 6 items here (same as in your code, but only the first 6) -->
+                    <div class="service-item pt-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
                         data-aos="fade-up" data-aos-duration="1000">
                         <div class="flex justify-center items-center">
-                            <img src="./img/services1.jpg" alt="">
+                            <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services6.jpg" alt="">
                         </div>
-
-                        <div class="text-center py-6">
-                            <h1 class="text-[#3B9C43] text-2xl font-semibold py-2">General Surgery</h1>
-
+                        <div class="text-center py-4">
+                            <h1 class="text-[#313860] text-xl font-semibold py-2">24x7 CT Scan</h1>
                         </div>
-
-                        <div class="text-center relative top-">
-                            <!-- <div
-                                class="w-[150px] mx-auto   bg-[#3B9C43] py-3 px-5 text-white rounded-full read-more-btn">
-
-                                <a href="#" class="font-semibold text-[white]">Read More</a>
-
-                            </div> -->
-                        </div>
-
                     </div>
-
-                    <!-- 2 -->
-                    <div class="text-center py-6 md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 pb-6 servies-cart overflow-hidden"
+                    <div class="service-item pt-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
                         data-aos="fade-up" data-aos-duration="1000">
                         <div class="flex justify-center items-center">
-                            <img src="./img/services2.jpg" alt="">
+                            <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services6.jpg" alt="">
                         </div>
-
-                        <div class="text-center py-6">
-                            <h1 class="text-[#3B9C43] text-2xl font-semibold py-2">Gynecology</h1>
-
+                        <div class="text-center py-4">
+                            <h1 class="text-[#313860] text-xl font-semibold py-2">Digital X Ray
+                            </h1>
                         </div>
-
-                        <div class="text-center relative top-">
-                            <!-- <div
-                                class="w-[150px] mx-auto   bg-[#3B9C43] py-3 px-5 text-white rounded-full read-more-btn">
-
-                                <a href="#" class="font-semibold text-[white]">Read More</a>
-
-                            </div> -->
-                        </div>
-
                     </div>
-                    <!-- 3 -->
-                    <div class="text-center py-6 md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 pb-6 servies-cart overflow-hidden"
+                    <div class="service-item pt-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
                         data-aos="fade-up" data-aos-duration="1000">
                         <div class="flex justify-center items-center">
-                            <img src="./img/services3.jpg" alt="">
+                            <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services6.jpg" alt="">
                         </div>
-
-                        <div class="text-center py-6">
-                            <h1 class="text-[#3B9C43] text-2xl font-semibold py-2">Orthopedics</h1>
-
+                        <div class="text-center py-4">
+                            <h1 class="text-[#313860] text-xl font-semibold py-2">Ultrasound Scan
+                            </h1>
                         </div>
-
-                        <div class="text-center relative top-">
-                            <!-- <div
-                                class="w-[150px] mx-auto   bg-[#3B9C43] py-3 px-5 text-white rounded-full read-more-btn">
-
-                                <a href="#" class="font-semibold text-[white]">Read More</a>
-
-                            </div> -->
-                        </div>
-
                     </div>
-
-                    <!-- 4 -->
-                    <div class="text-center py-6 md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 pb-6 servies-cart overflow-hidden"
+                    <div class="service-item pt-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
                         data-aos="fade-up" data-aos-duration="1000">
                         <div class="flex justify-center items-center">
-                            <img src="./img/services4.jpg" alt="">
+                            <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services6.jpg" alt="">
                         </div>
-
-                        <div class="text-center py-6">
-                            <h1 class="text-[#3B9C43] text-2xl font-semibold py-2">ENT</h1>
-
+                        <div class="text-center py-4">
+                            <h1 class="text-[#313860] text-xl font-semibold py-2">Color Dopler
+                            </h1>
                         </div>
-
-                        <div class="text-center relative top-">
-                            <!-- <div
-                                class="w-[150px] mx-auto   bg-[#3B9C43] py-3 px-5 text-white rounded-full read-more-btn">
-
-                                <a href="#" class="font-semibold text-[white]">Read More</a>
-
-                            </div> -->
-                        </div>
-
                     </div>
-                    <!-- 5 -->
-
-                    <div class="text-center py-6 md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 pb-6 servies-cart overflow-hidden"
+                    <div class="service-item pt-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
                         data-aos="fade-up" data-aos-duration="1000">
                         <div class="flex justify-center items-center">
-                            <img src="./img/services5.jpg" alt="">
+                            <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services6.jpg" alt="">
                         </div>
-
-                        <div class="text-center py-6">
-                            <h1 class="text-[#3B9C43] text-2xl font-semibold py-2">Neurology</h1>
-
+                        <div class="text-center py-4">
+                            <h1 class="text-[#313860] text-xl font-semibold py-2">ECG
+                            </h1>
                         </div>
-
-                        <div class="text-center relative top-">
-                            <!-- <div
-                                class="w-[150px] mx-auto   bg-[#3B9C43] py-3 px-5 text-white rounded-full read-more-btn">
-
-                                <a href="#" class="font-semibold text-[white]">Read More</a>
-
-                            </div> -->
-                        </div>
-
                     </div>
-                    <!-- 6 -->
-
-                    <div class="text-center py-6 md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 pb-6 servies-cart overflow-hidden"
+                    <div class="service-item pt-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
                         data-aos="fade-up" data-aos-duration="1000">
                         <div class="flex justify-center items-center">
-                            <img src="./img/services6.jpg" alt="">
+                            <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services6.jpg" alt="">
                         </div>
+                        <div class="text-center py-4">
+                            <h1 class="text-[#313860] text-xl font-semibold py-2">EchoCardiogram - 2d Echo
 
-                        <div class="text-center py-6">
-                            <h1 class="text-[#3B9C43] text-2xl font-semibold py-2">Neurosurgery</h1>
-
-                        </div>
-
-                        <div class="text-center relative top-">
+                            </h1>
                         </div>
                     </div>
+
+                    <!-- Repeat for the next 5 services -->
+
+
+                    <!-- Hidden services (7th and beyond) -->
+                    <div class="hidden-items hidden flex justify-start items-center gap-10 flex-wrap">
+                        <div class="pt-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
+                            data-aos="fade-up" data-aos-duration="1000">
+                            <div class="flex justify-center items-center">
+                                <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services6.jpg"
+                                    alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <h1 class="text-[#313860] text-xl font-semibold py-2">Gastroscopy</h1>
+                            </div>
+                        </div>
+                        <div class="pt-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
+                            data-aos="fade-up" data-aos-duration="1000">
+                            <div class="flex justify-center items-center">
+                                <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services6.jpg"
+                                    alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <h1 class="text-[#313860] text-xl font-semibold py-2">Colonoscopy</h1>
+                            </div>
+                        </div>
+                        <div class="pt-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
+                            data-aos="fade-up" data-aos-duration="1000">
+                            <div class="flex justify-center items-center">
+                                <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services6.jpg"
+                                    alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <h1 class="text-[#313860] text-xl font-semibold py-2">Pulmonary Function Test
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="pt-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
+                            data-aos="fade-up" data-aos-duration="1000">
+                            <div class="flex justify-center items-center">
+                                <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services6.jpg"
+                                    alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <h1 class="text-[#313860] text-xl font-semibold py-2">EEG Facility
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="pt-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
+                            data-aos="fade-up" data-aos-duration="1000">
+                            <div class="flex justify-center items-center">
+                                <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services6.jpg"
+                                    alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <h1 class="text-[#313860] text-xl font-semibold py-2">Nerve Conduction Study
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="pt-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
+                            data-aos="fade-up" data-aos-duration="1000">
+                            <div class="flex justify-center items-center">
+                                <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services6.jpg"
+                                    alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <h1 class="text-[#313860] text-xl font-semibold py-2">Neurosense
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="pt-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
+                            data-aos="fade-up" data-aos-duration="1000">
+                            <div class="flex justify-center items-center">
+                                <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services6.jpg"
+                                    alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <h1 class="text-[#313860] text-xl font-semibold py-2">Pathology</h1>
+                            </div>
+                        </div>
+                        <div class="pt-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
+                            data-aos="fade-up" data-aos-duration="1000">
+                            <div class="flex justify-center items-center">
+                                <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services6.jpg"
+                                    alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <h1 class="text-[#313860] text-xl font-semibold py-2">Microbiology
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="pt-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
+                            data-aos="fade-up" data-aos-duration="1000">
+                            <div class="flex justify-center items-center">
+                                <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services6.jpg"
+                                    alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <h1 class="text-[#313860] text-xl font-semibold py-2">Fully Automated Cell Counter
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="pt-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
+                            data-aos="fade-up" data-aos-duration="1000">
+                            <div class="flex justify-center items-center">
+                                <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services6.jpg"
+                                    alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <h1 class="text-[#313860] text-xl font-semibold py-2">Biochemistry Analyser
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="pt-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
+                            data-aos="fade-up" data-aos-duration="1000">
+                            <div class="flex justify-center items-center">
+                                <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services6.jpg"
+                                    alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <h1 class="text-[#313860] text-xl font-semibold py-2">BElectrolyte Reader
+
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="pt-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
+                            data-aos="fade-up" data-aos-duration="1000">
+                            <div class="flex justify-center items-center">
+                                <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services6.jpg"
+                                    alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <h1 class="text-[#313860] text-xl font-semibold py-2">ABG (Arterial Blood Gases)
+
+
+                                </h1>
+                            </div>
+                        </div>
+                    
+                        <div class="pt-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
+                            data-aos="fade-up" data-aos-duration="1000">
+                            <div class="flex justify-center items-center">
+                                <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services6.jpg"
+                                    alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <h1 class="text-[#313860] text-xl font-semibold py-2">ICU
+                                </h1>
+                                <ul>
+                                    <li>MultiPara Monitors
+                                    </li>
+                                    <li>Ventilators</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pt-5 items-center text-center md:w-[30%] w-full services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
+                            data-aos="fade-up" data-aos-duration="1000">
+                            <div class="flex justify-center items-center">
+                                <img style="height: 70px;width: 70px;border-radius: 50%;" src="./img/services6.jpg"
+                                    alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <h1 class="text-[#313860] text-xl font-semibold py-2">Operation Theaters
+                                </h1>
+                                <ul>
+                                    <li>Laminar Flow Modular Theaters
+                                    </li>
+                                    <li>Advanced Laparoscopic Equipment 
+                                    </li>
+                                    <li>C-ARM
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Repeat for additional services -->
+                    </div>
+
                 </div>
             </div>
 
-        </div>
-
-        <div class="text-center pt-16 flex justify-center items-center  ">
-            <div class="hidden md:block">
-                <img src="./img/HorizontalDivider.png" alt="">
+            <!-- Read More button -->
+            <div class="text-center pt-16">
+                <button id="read-more-btn"
+                    class="w-[350px] rounded-full bg-[#3B9C43] py-3 px-10 text-white cursor-pointer">
+                    Read More
+                </button>
             </div>
-            <div class="w-[350px] rounded-full   bg-[#3B9C43] py-3 px-10 text-white">
-
-                <a href="services.html" class="font-semibold text-[white] text-nowrap">View All</a>
-
-            </div>
-            <div class=" hidden md:block">
-                <img src="./img/HorizontalDivider.png" alt="">
-            </div>
-        </div>
-
 
         </div>
-
-
-
-        <!-- <div class="absolute bottom-0 right-0 w-[250px] h-[250px] ">
-            <img src="./img/services-bg-icon.png" alt="">
-        </div> -->
     </section>
+
 
     <!-- We're here to support you, -->
 
@@ -573,13 +1202,9 @@
             <div class="flex justify-between items-center   md:flex-nowrap flex-wrap">
                 <div class="md:w-[70%] w-full  justify-center items-center">
                     <div class="text-white w-[80%] md:pt-2 pt-2 md:pt-0 mx-auto md:mx-0">
-                        <h1 class="text-4xl font-semibold pb-8" data-aos="fade-up" data-aos-duration="1500">We're here to
-                            support you,
-                            offering care and healing every
-                            step of the way.</h1>
-                        <p class="pb-8" data-aos="fade-up" data-aos-duration="2000"> At Nightingale hospital We care,
-                            we comfort, we heal, for your Personalized care, tailored to you. With our Dedicated team,
-                            guiding your recovery.
+                        <h1 class="text-4xl font-semibold pb-8" data-aos="fade-up" data-aos-duration="1500">We’ve Been Pioneering Advanced Laproscopic Surgical Care Since 1996.</h1>
+                        <p class="pb-8" data-aos="fade-up" data-aos-duration="2000">At Nightingale Hospitals, we take pride in being one of the earliest laparoscopic centers, delivering precision, trust, and personalized care for nearly three decades. Our dedicated team ensures your recovery journey is seamless and supported every step of the way.
+
                         </p>
                     </div>
                     <div class="  " data-aos="fade-up" data-aos-duration="2500">
@@ -594,10 +1219,11 @@
 
 
                 </div>
-                <div class="md:w-[50%] w-full flex justify-center items-center relative z-3" data-aos="fade-up"
+                <div class="md:w-[50%] w-full flex justify-center items-center relative z-3 py-12" data-aos="fade-up"
                     data-aos-duration="2000">
                     <div class="">
-                        <img src="./img/cta_1.png" class="w-full" alt="">
+                        <img src="https://img.freepik.com/free-photo/gynecologist-performing-ultrasound-consultation_23-2149353029.jpg?t=st=1737713803~exp=1737717403~hmac=4975d1637b28899c9f478fdc250d05efd1fce5c196779be819d353aa18215726&w=996"
+                            class="w-full" alt="">
                     </div>
                 </div>
 
@@ -614,7 +1240,10 @@
                 <div class="w-[200px] mx-auto my-3">
                     <img src="./img/about-trusted-customer-img.png" alt="">
                 </div>
-                <p class="text-xl font-semibold text-[#015C88]">6 Lakhs+ Patients Treated So Far</p>
+                <p class="text-xl font-semibold text-[#015C88]">
+                    50K + Surgeries So Far
+                </p>
+                <p class="text-xl font-semibold text-[#015C88]">7.4 Lakhs - Satisfied Patients</p>
 
             </div>
 
@@ -755,66 +1384,73 @@
 
     <!-- Testimonial -->
 
-    
- <!-- Testimonial -->
 
- <section class=" py-10  ">
-    <div class=" items-center flex-wrap gap-10 md:gap-0 custom-container">
-        <div class="md:w-[100%]  flex justify-center py-20 px-10 md:px-0">
-            <div class=" md:w-[60%] space-y-4 text-center">
-                <h6 class=" text-xl font-bold text-[#015C88]">Testimonial</h6>
+    <!-- Testimonial -->
 
-                <h1 class="text-5xl font-bold text-[#3B9C43]">What Our Patients Say?</h1>
-                
+    <section class=" py-10  ">
+        <div class=" items-center flex-wrap gap-10 md:gap-0 custom-container">
+            <div class="md:w-[100%]  flex justify-center py-20 px-10 md:px-0">
+                <div class=" md:w-[60%] space-y-4 text-center">
+                    <h6 class=" text-xl font-bold text-[#015C88]">Testimonial</h6>
+
+                    <h1 class="text-5xl font-bold text-[#3B9C43]">What Our Patients Say?</h1>
+
+                </div>
+
             </div>
-
-        </div>
-        <div class="md:w-[100%]  flex flex-col justify-end mx-auto md:mx-0 ">
-            <div class="w-full ">
-                <div class="swiper mySwiper px-10 py-10">
-                    <div class="swiper-wrapper ">
-                        <!-- 1 -->
-                        <div class="swiper-slide ">
-                            <div
+            <div class="md:w-[100%]  flex flex-col justify-end mx-auto md:mx-0 ">
+                <div class="w-full ">
+                    <div class="swiper mySwiper px-10 py-10">
+                        <div class="swiper-wrapper ">
+                            <!-- 1 -->
+                            <div class="swiper-slide ">
+                                <div
                                     class=" mx-auto w-full bg-gradient-to-br  rounded-2xl bg-[#F5F7FA] transform hover:scale-105 transition-transform duration-300">
                                     <div class="p-6 sm:p-8">
                                         <div class="flex justify-between items-center mb-4">
                                             <div class="flex items-center space-x-2">
-                                                <svg class="w-5 h-5 text-yellow-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    fill="currentColor" viewBox="0 0 20 20">
+                                                <svg class="w-5 h-5 text-yellow-400 fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
                                                     <path
                                                         d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
                                                 </svg>
-                                                <svg class="w-5 h-5 text-yellow-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    fill="currentColor" viewBox="0 0 20 20">
+                                                <svg class="w-5 h-5 text-yellow-400 fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
                                                     <path
                                                         d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
                                                 </svg>
-                                                <svg class="w-5 h-5 text-yellow-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    fill="currentColor" viewBox="0 0 20 20">
+                                                <svg class="w-5 h-5 text-yellow-400 fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
                                                     <path
                                                         d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
                                                 </svg>
-                                                <svg class="w-5 h-5 text-yellow-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    fill="currentColor" viewBox="0 0 20 20">
+                                                <svg class="w-5 h-5 text-yellow-400 fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
                                                     <path
                                                         d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
                                                 </svg>
-                                                <svg class="w-5 h-5 text-yellow-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    fill="currentColor" viewBox="0 0 20 20">
+                                                <svg class="w-5 h-5 text-yellow-400 fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
                                                     <path
                                                         d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
                                                 </svg>
                                             </div>
-                                            
+
                                         </div>
                                         <p class=" text-xl font-medium mb-6">
-                                            “Nice treatment by Dr. Lalitha Reddy madam. The treatment is excellent in gynecology. Both my sons were born at this hospital. The hospital environment is superb with supportive staff and excellent cleanliness.”
+                                            “Nice treatment by Dr. Lalitha Reddy madam. The treatment is excellent in
+                                            gynecology. Both my sons were born at this hospital. The hospital
+                                            environment is superb with supportive staff and excellent cleanliness.”
                                         </p>
 
                                         <div class="flex justify-between  items-center ">
                                             <div class="flex items-center space-x-4">
-                                           
+
                                                 <div>
                                                     <p class="text-[#2A2D7A] font-semibold">Haridas Nikhil</p>
                                                 </div>
@@ -825,48 +1461,56 @@
                                             </div>
 
                                         </div>
-                                        
+
                                     </div>
                                 </div>
-                        </div>
-            
-                        <!-- 2 -->
-                        <div class="swiper-slide">
-                            <div
+                            </div>
+
+                            <!-- 2 -->
+                            <div class="swiper-slide">
+                                <div
                                     class=" mx-auto w-full bg-gradient-to-br  rounded-2xl bg-[#F5F7FA] transform hover:scale-105 transition-transform duration-300">
                                     <div class="p-6 sm:p-8">
                                         <div class="flex justify-between items-center mb-4">
                                             <div class="flex items-center space-x-2">
-                                                <svg class="w-5 h-5 text-yellow-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    fill="currentColor" viewBox="0 0 20 20">
+                                                <svg class="w-5 h-5 text-yellow-400 fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
                                                     <path
                                                         d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
                                                 </svg>
-                                                <svg class="w-5 h-5 text-yellow-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    fill="currentColor" viewBox="0 0 20 20">
+                                                <svg class="w-5 h-5 text-yellow-400 fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
                                                     <path
                                                         d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
                                                 </svg>
-                                                <svg class="w-5 h-5 text-yellow-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    fill="currentColor" viewBox="0 0 20 20">
+                                                <svg class="w-5 h-5 text-yellow-400 fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
                                                     <path
                                                         d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
                                                 </svg>
-                                                <svg class="w-5 h-5 text-yellow-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    fill="currentColor" viewBox="0 0 20 20">
+                                                <svg class="w-5 h-5 text-yellow-400 fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
                                                     <path
                                                         d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
                                                 </svg>
-                                                <svg class="w-5 h-5 text-yellow-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    fill="currentColor" viewBox="0 0 20 20">
+                                                <svg class="w-5 h-5 text-yellow-400 fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
                                                     <path
                                                         d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
                                                 </svg>
                                             </div>
-                                           
+
                                         </div>
                                         <p class=" text-xl font-medium mb-6">
-                                            “My check-up was very well done. The doctor's care and attention to patients are excellent. My first delivery was done at this hospital, and I had a very good experience. That is why I am taking my second pregnancy treatment here as well.”
+                                            “My check-up was very well done. The doctor's care and attention to patients
+                                            are excellent. My first delivery was done at this hospital, and I had a very
+                                            good experience. That is why I am taking my second pregnancy treatment here
+                                            as well.”
                                         </p>
                                         <div class="flex justify-between  items-center ">
                                             <div class="flex items-center space-x-4">
@@ -882,53 +1526,61 @@
                                             </div>
 
                                         </div>
-                                      
+
                                     </div>
                                 </div>
-                        </div>
+                            </div>
 
-                         <!-- 3 -->
-                         <div class="swiper-slide">
-                            <div
+                            <!-- 3 -->
+                            <div class="swiper-slide">
+                                <div
                                     class=" mx-auto w-full bg-gradient-to-br  rounded-2xl bg-[#F5F7FA] transform hover:scale-105 transition-transform duration-300">
                                     <div class="p-6 sm:p-8">
                                         <div class="flex justify-between items-center mb-4">
                                             <div class="flex items-center space-x-2">
-                                                <svg class="w-5 h-5 text-yellow-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    fill="currentColor" viewBox="0 0 20 20">
+                                                <svg class="w-5 h-5 text-yellow-400 fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
                                                     <path
                                                         d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
                                                 </svg>
-                                                <svg class="w-5 h-5 text-yellow-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    fill="currentColor" viewBox="0 0 20 20">
+                                                <svg class="w-5 h-5 text-yellow-400 fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
                                                     <path
                                                         d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
                                                 </svg>
-                                                <svg class="w-5 h-5 text-yellow-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    fill="currentColor" viewBox="0 0 20 20">
+                                                <svg class="w-5 h-5 text-yellow-400 fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
                                                     <path
                                                         d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
                                                 </svg>
-                                                <svg class="w-5 h-5 text-yellow-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    fill="currentColor" viewBox="0 0 20 20">
+                                                <svg class="w-5 h-5 text-yellow-400 fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
                                                     <path
                                                         d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
                                                 </svg>
-                                                <svg class="w-5 h-5 text-yellow-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    fill="currentColor" viewBox="0 0 20 20">
+                                                <svg class="w-5 h-5 text-yellow-400 fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
                                                     <path
                                                         d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
                                                 </svg>
                                             </div>
-                                           
+
                                         </div>
                                         <p class=" text-xl font-medium mb-6">
-                                            “The staff is very friendly. Dr. Lalitha Mam is a highly experienced and expert gynecologist. I have been receiving the best treatment here for the past 26 years. I highly recommend this hospital to anyone in need of a female doctor.”
+                                            “The staff is very friendly. Dr. Lalitha Mam is a highly experienced and
+                                            expert gynecologist. I have been receiving the best treatment here for the
+                                            past 26 years. I highly recommend this hospital to anyone in need of a
+                                            female doctor.”
                                         </p>
 
                                         <div class="flex justify-between  items-center ">
                                             <div class="flex items-center space-x-4">
-                                             
+
                                                 <div>
                                                     <p class="text-[#2A2D7A] font-semibold">Lakshmi Mahendra</p>
                                                 </div>
@@ -938,53 +1590,61 @@
                                             </div>
 
                                         </div>
-                                     
+
                                     </div>
                                 </div>
-                        </div>
+                            </div>
 
-                        <!-- 4 -->
-                        <div class="swiper-slide">
-                            <div
+                            <!-- 4 -->
+                            <div class="swiper-slide">
+                                <div
                                     class=" mx-auto w-full bg-gradient-to-br  rounded-2xl bg-[#F5F7FA] transform hover:scale-105 transition-transform duration-300">
                                     <div class="p-6 sm:p-8">
                                         <div class="flex justify-between items-center mb-4">
                                             <div class="flex items-center space-x-2">
-                                                <svg class="w-5 h-5 text-yellow-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    fill="currentColor" viewBox="0 0 20 20">
+                                                <svg class="w-5 h-5 text-yellow-400 fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
                                                     <path
                                                         d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
                                                 </svg>
-                                                <svg class="w-5 h-5 text-yellow-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    fill="currentColor" viewBox="0 0 20 20">
+                                                <svg class="w-5 h-5 text-yellow-400 fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
                                                     <path
                                                         d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
                                                 </svg>
-                                                <svg class="w-5 h-5 text-yellow-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    fill="currentColor" viewBox="0 0 20 20">
+                                                <svg class="w-5 h-5 text-yellow-400 fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
                                                     <path
                                                         d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
                                                 </svg>
-                                                <svg class="w-5 h-5 text-yellow-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    fill="currentColor" viewBox="0 0 20 20">
+                                                <svg class="w-5 h-5 text-yellow-400 fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
                                                     <path
                                                         d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
                                                 </svg>
-                                                <svg class="w-5 h-5 text-yellow-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    fill="currentColor" viewBox="0 0 20 20">
+                                                <svg class="w-5 h-5 text-yellow-400 fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
                                                     <path
                                                         d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
                                                 </svg>
                                             </div>
-                                           
+
                                         </div>
                                         <p class=" text-xl font-medium mb-6">
-                                            “This is the best hospital. All the nurses and doctors are punctual, and medicines are given on time. The facilities are excellent, and everything is neat and clean, including the rooms, dustbins, and bathrooms. The treatment is very nice. 🙏👍 We are happy with the care and medication provided here.”
+                                            “This is the best hospital. All the nurses and doctors are punctual, and
+                                            medicines are given on time. The facilities are excellent, and everything is
+                                            neat and clean, including the rooms, dustbins, and bathrooms. The treatment
+                                            is very nice. 🙏👍 We are happy with the care and medication provided here.”
                                         </p>
 
                                         <div class="flex justify-between  items-center ">
                                             <div class="flex items-center space-x-4">
-                                           
+
                                                 <div>
                                                     <p class="text-[#2A2D7A] font-semibold">Venkatesh Yadav</p>
                                                 </div>
@@ -994,77 +1654,85 @@
                                             </div>
 
                                         </div>
-                                     
+
                                     </div>
                                 </div>
-                        </div>
-               <!-- 5 -->
-               <div class="swiper-slide">
-                <div
-                        class=" mx-auto w-full bg-gradient-to-br  rounded-2xl bg-[#F5F7FA] transform hover:scale-105 transition-transform duration-300">
-                        <div class="p-6 sm:p-8">
-                            <div class="flex justify-between items-center mb-4">
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-5 h-5 text-yellow-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                        fill="currentColor" viewBox="0 0 20 20">
-                                        <path
-                                            d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
-                                    </svg>
-                                    <svg class="w-5 h-5 text-yellow-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                        fill="currentColor" viewBox="0 0 20 20">
-                                        <path
-                                            d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
-                                    </svg>
-                                    <svg class="w-5 h-5 text-yellow-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                        fill="currentColor" viewBox="0 0 20 20">
-                                        <path
-                                            d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
-                                    </svg>
-                                    <svg class="w-5 h-5 text-yellow-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                        fill="currentColor" viewBox="0 0 20 20">
-                                        <path
-                                            d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
-                                    </svg>
-                                    <svg class="w-5 h-5 text-yellow-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                        fill="currentColor" viewBox="0 0 20 20">
-                                        <path
-                                            d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
-                                    </svg>
-                                </div>
-                               
                             </div>
-                            <p class=" text-xl font-medium mb-6">
-                                “Very good hospital near Santhosh Nagar with neat and clean maintenance. Dr. Vijay Shekar Reddy is very senior and kind, treating people with great care. The staff is also very friendly, and the prices are reasonable. I definitely recommend this hospital.”
-                            </p>
+                            <!-- 5 -->
+                            <div class="swiper-slide">
+                                <div
+                                    class=" mx-auto w-full bg-gradient-to-br  rounded-2xl bg-[#F5F7FA] transform hover:scale-105 transition-transform duration-300">
+                                    <div class="p-6 sm:p-8">
+                                        <div class="flex justify-between items-center mb-4">
+                                            <div class="flex items-center space-x-2">
+                                                <svg class="w-5 h-5 text-yellow-400 fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
+                                                    <path
+                                                        d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
+                                                </svg>
+                                                <svg class="w-5 h-5 text-yellow-400 fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
+                                                    <path
+                                                        d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
+                                                </svg>
+                                                <svg class="w-5 h-5 text-yellow-400 fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
+                                                    <path
+                                                        d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
+                                                </svg>
+                                                <svg class="w-5 h-5 text-yellow-400 fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
+                                                    <path
+                                                        d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
+                                                </svg>
+                                                <svg class="w-5 h-5 text-yellow-400 fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
+                                                    <path
+                                                        d="M10 15.27L16.18 20l-1.64-7.03L20 8.24l-7.19-.61L10 1 7.19 7.63 0 8.24l5.46 4.73L3.82 20z" />
+                                                </svg>
+                                            </div>
 
-                            <div class="flex justify-between  items-center ">
-                                <div class="flex items-center space-x-4">
-                                  
-                                    <div>
-                                        <p class="text-[#2A2D7A] font-semibold">boddupally shekar</p>
+                                        </div>
+                                        <p class=" text-xl font-medium mb-6">
+                                            “Very good hospital near Santhosh Nagar with neat and clean maintenance. Dr.
+                                            Vijay Shekar Reddy is very senior and kind, treating people with great care.
+                                            The staff is also very friendly, and the prices are reasonable. I definitely
+                                            recommend this hospital.”
+                                        </p>
+
+                                        <div class="flex justify-between  items-center ">
+                                            <div class="flex items-center space-x-4">
+
+                                                <div>
+                                                    <p class="text-[#2A2D7A] font-semibold">boddupally shekar</p>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <img src="./img/review-icon.svg" alt="">
+                                            </div>
+
+                                        </div>
+
                                     </div>
                                 </div>
-                                <div class="">
-                                    <img src="./img/review-icon.svg" alt="">
-                                </div>
-
                             </div>
-                         
+
+
+
                         </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
-            </div>
-                      
-                       
-                        
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                </div> 
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 
@@ -1237,6 +1905,15 @@
     </div> -->
     <!-- footer -->
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <div class="floating_btn">
+        <a target="_blank" href="https://wa.me/">
+            <div class="contact_icon">
+                <i class="fa fa-phone my-float"></i>
+            </div>
+        </a>
+        <p class="text_icon">Talk to us?</p>
+    </div>
     <section class="bg-[url(./img/footer-bg.png)] bg-no-repeat bg-cover py-20">
         <div class="custom-container w-[80%] md:w-[100%]">
             <div class="flex justify-between items-center flex-wrap md:flex-nowrap">
@@ -1447,6 +2124,54 @@
         });
 
     </script>
+
+    <script>
+        const slides = document.getElementById("carousel-slides");
+        const totalSlides = slides.children.length;
+        let currentSlide = 0;
+
+        // Function to update the slide position
+        function updateSlidePosition() {
+            slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        // Function to go to the next slide
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateSlidePosition();
+        }
+
+        // Function to go to the previous slide
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateSlidePosition();
+        }
+
+        // Auto-slide functionality
+        setInterval(() => {
+            nextSlide(); // Automatically go to the next slide
+        }, 5000); // Change slide every 5 seconds
+    </script>
+
+
+    <script>
+        document.getElementById('read-more-btn').addEventListener('click', function () {
+            const hiddenItems = document.querySelector('.hidden-items');
+            const button = document.getElementById('read-more-btn');
+
+            // Toggle visibility of hidden items
+            hiddenItems.classList.toggle('hidden');
+
+            // Change button text based on visibility
+            if (hiddenItems.classList.contains('hidden')) {
+                button.textContent = 'Read More';
+            } else {
+                button.textContent = 'Read Less';
+            }
+        });
+    </script>
+
+
 </body>
 
 </html>
