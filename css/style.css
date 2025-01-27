@@ -2086,7 +2086,7 @@ html {
   background-repeat: no-repeat;
 }
 
-.mainBanner1::before {
+.mainBanner1::before,.mainBanner2::before,.mainBanner3::before,.mainBanner4::before {
   content: '';
   position: absolute;
   top: 0;
@@ -2103,17 +2103,19 @@ html {
   background-repeat: no-repeat;
   background-position: center;
 }
-.mainBanner2::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black; /* Overlay color */
-  opacity: 0.3; /* Overlay transparency */
-  z-index: 1; /* Place the overlay behind the content */
+.mainBanner3{
+  background-image: url('../facilities/Gynaecology1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+.mainBanner4{
+  background-image: url('../facilities/Orthopaedics1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media screen and (max-width:575px){
   h1.fisrt-h1.pb-5.aos-init.aos-animate {
     font-size: 28px;
