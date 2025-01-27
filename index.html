@@ -21,6 +21,11 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
+        [data-aos] {
+            opacity: 1 !important;
+            transform: none !important;
+        }
+
         .fisrt-h1 {
             color: #FFF;
 
@@ -231,116 +236,86 @@
             <div class="flex w-full h-full transition-transform duration-700 ease-in-out" id="carousel-slides">
                 <!-- Slide 1 -->
                 <div class="w-full h-full flex-shrink-0">
-                    <section
-                        class="main-banner bg-[url('./img/bg-1.png')]  h-full  opacity-90 bg-no-repeat bg-cover relative overflow-hidden">
-                        <div class="absolute top-0 left-0 w-[200px] h-[200px]   ">
+                    <section class="main-banner mainBanner1 mainBannerMobile1 h-full w-full bg-no-repeat relative overflow-hidden">
+                        <!-- Content of the banner -->
+                        <div class="absolute top-0 left-0 w-[200px] h-[200px] z-10">
                             <img src="./img/hero-banner-1.svg" alt="">
                         </div>
-                        <div class="absolute top-0 right-0 w-[200px] h-[200px]  z-10 ">
+                        <div class="absolute top-0 right-0 w-[200px] h-[200px] z-10">
                             <img src="./img/hero-banner-3.png" alt="">
                         </div>
 
-                        <div class="absolute -top-20 -right-20 w-[700px] h-[600px]  -z-1 hidden md:block">
-                            <img src="./img/Ellipse-1.png" alt="">
-                        </div>
-                        <div class="custom-container pt-10">
-                            <div class="flex justify-between items-end   md:flex-nowrap flex-wrap">
-                                <div class=" w-full  justify-center items-center">
-                                    <div class="relative text-white w-[80%] md:pt-20 pt-2 md:pt-0  mx-auto md:mx-0">
-                                        <div class="absolute top-10 -left-10 w-[200px] h-[200px]   ">
+                        <div class="custom-container pt-10 relative z-10">
+                            <div class="flex justify-between items-end md:flex-nowrap flex-wrap">
+                                <div class="w-full justify-center items-center">
+                                    <div class="relative text-white w-[80%] md:pt-20 pt-2 md:pt-0 mx-auto md:mx-0">
+                                        <div class="absolute top-10 -left-10 w-[200px] h-[200px] z-10">
                                             <img src="./img/hero-banner-2.svg" alt="">
                                         </div>
-                                        <h1 class=" fisrt-h1 pb-5" data-aos="fade-up" data-aos-duration="1500">A Legacy
-                                            of Trust in Multispeciality Healthcare</h1>
-                                        <p class="pb-10" data-aos="fade-up" data-aos-duration="2000"> Providing
-                                            comprehensive healthcare solutions with a legacy of trust and unmatched
-                                            expertise.
+                                        <h1 class="fisrt-h1 pb-5" data-aos="fade-up" data-aos-duration="1500">A Legacy
+                                            of Trust in Multispeciality
+                                            Healthcare</h1>
+                                        <p class="pb-10" data-aos="fade-up" data-aos-duration="2000">
+                                            Providing comprehensive healthcare solutions with a legacy of trust and
+                                            unmatched expertise.
                                         </p>
                                     </div>
-                                    <div class="  " data-aos="fade-up" data-aos-duration="2500">
+                                    <div data-aos="fade-up" data-aos-duration="2500">
                                         <div
-                                            class="nav-button cloud-button ml-[40px]    md:ml-0  text-white text-[10px] md:text-[16px]">
-
-                                            <a href="contact.html" class="font-semibold text-[white]   ">Book
+                                            class="nav-button cloud-button ml-[40px] md:ml-0 text-white text-[10px] md:text-[16px]">
+                                            <a href="contact.html" class="font-semibold text-[white]">Book
                                                 Appointment &nbsp <i class="fa-solid fa-arrow-right"></i> </a>
-
                                         </div>
-
-                                        <div class="nav-button bg-[transparent]  text-white pt-16 py-5">
-
+                                        <div class="nav-button bg-[transparent] text-white pt-16 py-5">
                                             <img src="./img/google-review-img.png" class="w-[240px]" alt="">
-
                                         </div>
                                     </div>
-
-
                                 </div>
-                                <div class="md:w-[50%] w-full flex justify-center items-center relative z-3"
-                                    data-aos="fade-up" data-aos-duration="2000">
-                                    <div class="">
-                                        <img src="./img/main-banner-img-right.png" class="w-full" alt="">
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
                     </section>
                 </div>
+
                 <!-- Slide 2 -->
                 <div class="w-full h-full flex-shrink-0 bg-gray-200 flex items-center justify-center">
                     <div class="w-full h-full flex-shrink-0">
                         <section
-                            class="main-banner bg-[url('./img/bg-1.png')]  h-full  opacity-90 bg-no-repeat bg-cover relative overflow-hidden">
-                            <div class="absolute top-0 left-0 w-[200px] h-[200px]   ">
+                            class="main-banner mainBanner2 mainBannerMobile2 bg-[url('../facilities/General Surgery + Medicine1.png')] h-full bg-no-repeat bg-cover relative overflow-hidden">
+                            <!-- Banner Content -->
+                            <div class="absolute top-0 left-0 w-[200px] h-[200px] z-10">
                                 <img src="./img/hero-banner-1.svg" alt="">
                             </div>
-                            <div class="absolute top-0 right-0 w-[200px] h-[200px]  z-10 ">
+                            <div class="absolute top-0 right-0 w-[200px] h-[200px] z-10">
                                 <img src="./img/hero-banner-3.png" alt="">
                             </div>
 
-                            <div class="absolute -top-20 -right-20 w-[700px] h-[600px]  -z-1 hidden md:block">
-                                <img src="./img/Ellipse-1.png" alt="">
-                            </div>
-                            <div class="custom-container pt-10">
-                                <div class="flex justify-between items-end   md:flex-nowrap flex-wrap">
-                                    <div class=" w-full  justify-center items-center">
-                                        <div class="relative text-white w-[80%] md:pt-20 pt-2 md:pt-0  mx-auto md:mx-0">
-                                            <div class="absolute top-10 -left-10 w-[200px] h-[200px]   ">
+                            <div class="custom-container pt-10 relative z-10">
+                                <div class="flex justify-between items-end md:flex-nowrap flex-wrap">
+                                    <div class="w-full justify-center items-center">
+                                        <div class="relative text-white w-[80%] md:pt-20 pt-2 md:pt-0 mx-auto md:mx-0">
+                                            <div class="absolute top-10 -left-10 w-[200px] h-[200px] z-10">
                                                 <img src="./img/hero-banner-2.svg" alt="">
                                             </div>
-                                            <h1 class=" fisrt-h1 pb-5" data-aos="fade-up" data-aos-duration="1500">
+                                            <!-- Remove AOS or Adjust -->
+                                            <h1 class="fisrt-h1 pb-5">
                                                 Comprehensive Care with Expert General Surgery and Medicine.
                                             </h1>
-                                            <p class="pb-10" data-aos="fade-up" data-aos-duration="2000">Our specialists
-                                                ensure personalized care tailored to your health requirements.
-
+                                            <p class="pb-10">
+                                                Our specialists ensure personalized care tailored to your health
+                                                requirements.
                                             </p>
                                         </div>
-                                        <div class="  " data-aos="fade-up" data-aos-duration="2500">
+                                        <div>
                                             <div
-                                                class="nav-button cloud-button ml-[40px]    md:ml-0  text-white text-[10px] md:text-[16px]">
-
-                                                <a href="contact.html" class="font-semibold text-[white]   ">Book
+                                                class="nav-button cloud-button ml-[40px] md:ml-0 text-white text-[10px] md:text-[16px]">
+                                                <a href="contact.html" class="font-semibold text-[white]">Book
                                                     Appointment &nbsp <i class="fa-solid fa-arrow-right"></i> </a>
-
                                             </div>
-
-                                            <div class="nav-button bg-[transparent]  text-white pt-16 py-5">
-
+                                            <div class="nav-button bg-[transparent] text-white pt-16 py-5">
                                                 <img src="./img/google-review-img.png" class="w-[240px]" alt="">
-
                                             </div>
                                         </div>
-
-
                                     </div>
-                                    <div class="md:w-[50%] w-full flex justify-center items-center relative z-3"
-                                        data-aos="fade-up" data-aos-duration="2000">
-                                        <div class="">
-                                            <img src="./img/main-banner-img-right.png" class="w-full" alt="">
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
                         </section>
@@ -350,185 +325,141 @@
                 <div class="w-full h-full flex-shrink-0 bg-gray-300 flex items-center justify-center">
                     <div class="w-full h-full flex-shrink-0">
                         <section
-                            class="main-banner bg-[url('./img/bg-1.png')]  h-full  opacity-90 bg-no-repeat bg-cover relative overflow-hidden">
-                            <div class="absolute top-0 left-0 w-[200px] h-[200px]   ">
-                                <img src="./img/hero-banner-1.svg" alt="">
-                            </div>
-                            <div class="absolute top-0 right-0 w-[200px] h-[200px]  z-10 ">
-                                <img src="./img/hero-banner-3.png" alt="">
-                            </div>
+                            class="main-banner mainBanner1 mainBannerMobile3 bg-[url('../facilities/Gynaecology1.png')] h-full bg-no-repeat bg-cover relative overflow-hidden">
+                            <!-- Overlay -->
+                            <!-- <div class="absolute inset-0 bg-black/50 z-0"></div>  -->
 
-                            <div class="absolute -top-20 -right-20 w-[700px] h-[600px]  -z-1 hidden md:block">
-                                <img src="./img/Ellipse-1.png" alt="">
-                            </div>
-                            <div class="custom-container pt-10">
-                                <div class="flex justify-between items-end   md:flex-nowrap flex-wrap">
-                                    <div class=" w-full  justify-center items-center">
-                                        <div class="relative text-white w-[80%] md:pt-20 pt-2 md:pt-0  mx-auto md:mx-0">
-                                            <div class="absolute top-10 -left-10 w-[200px] h-[200px]   ">
+                            <!-- Content -->
+                            <div class="custom-container pt-10 relative z-10">
+                                <div class="flex justify-between items-end md:flex-nowrap flex-wrap">
+                                    <div class="w-full justify-center items-center">
+                                        <div class="relative text-white w-[80%] md:pt-20 pt-2 md:pt-0 mx-auto md:mx-0">
+                                            <div class="absolute top-10 -left-10 w-[200px] h-[200px] z-10">
                                                 <img src="./img/hero-banner-2.svg" alt="">
                                             </div>
-                                            <h1 class=" fisrt-h1 pb-5" data-aos="fade-up" data-aos-duration="1500">
+                                            <h1 class="fisrt-h1 pb-5 z-10" data-aos="fade-up" data-aos-duration="1500">
                                                 Compassionate Obstetrics and Gynecology Care for Every Stage of Life
                                             </h1>
-                                            <p class="pb-10" data-aos="fade-up" data-aos-duration="2000"> From maternity
-                                                care to advanced gynecological treatments, your health is our priority.
-
+                                            <p class="pb-10" data-aos="fade-up" data-aos-duration="2000">
+                                                From maternity care to advanced gynecological treatments, your health is
+                                                our priority.
                                             </p>
                                         </div>
-                                        <div class="  " data-aos="fade-up" data-aos-duration="2500">
+                                        <div data-aos="fade-up" data-aos-duration="2500">
                                             <div
-                                                class="nav-button cloud-button ml-[40px]    md:ml-0  text-white text-[10px] md:text-[16px]">
-
-                                                <a href="contact.html" class="font-semibold text-[white]   ">Book
+                                                class="nav-button cloud-button ml-[40px] md:ml-0 text-white text-[10px] md:text-[16px]">
+                                                <a href="contact.html" class="font-semibold text-[white]">Book
                                                     Appointment &nbsp <i class="fa-solid fa-arrow-right"></i> </a>
-
                                             </div>
-
-                                            <div class="nav-button bg-[transparent]  text-white pt-16 py-5">
-
+                                            <div class="nav-button bg-[transparent] text-white pt-16 py-5">
                                                 <img src="./img/google-review-img.png" class="w-[240px]" alt="">
-
                                             </div>
                                         </div>
-
-
                                     </div>
-                                    <div class="md:w-[50%] w-full flex justify-center items-center relative z-3"
-                                        data-aos="fade-up" data-aos-duration="2000">
-                                        <div class="">
-                                            <img src="./img/main-banner-img-right.png" class="w-full" alt="">
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
                         </section>
+
                     </div>
                 </div>
                 <!-- Slide 4 -->
                 <div class="w-full h-full flex-shrink-0 bg-gray-300 flex items-center justify-center">
                     <div class="w-full h-full flex-shrink-0">
-                        <section
-                            class="main-banner bg-[url('./img/bg-1.png')]  h-full  opacity-90 bg-no-repeat bg-cover relative overflow-hidden">
-                            <div class="absolute top-0 left-0 w-[200px] h-[200px]   ">
+                        <section class="main-banner mainBanner1 mainBannerMobile4 h-full bg-no-repeat bg-cover relative overflow-hidden"
+                            style="background-image: url('../facilities/Orthopaedics1.png');">
+                            <!-- Overlay -->
+                            <!-- <div class="absolute inset-0 bg-black/50 z-0"></div>  -->
+
+                            <!-- Floating Elements -->
+                            <div class="absolute top-0 left-0 w-[200px] h-[200px] z-10">
                                 <img src="./img/hero-banner-1.svg" alt="">
                             </div>
-                            <div class="absolute top-0 right-0 w-[200px] h-[200px]  z-10 ">
+                            <div class="absolute top-0 right-0 w-[200px] h-[200px] z-10">
                                 <img src="./img/hero-banner-3.png" alt="">
                             </div>
 
-                            <div class="absolute -top-20 -right-20 w-[700px] h-[600px]  -z-1 hidden md:block">
-                                <img src="./img/Ellipse-1.png" alt="">
-                            </div>
-                            <div class="custom-container pt-10">
-                                <div class="flex justify-between items-end   md:flex-nowrap flex-wrap">
-                                    <div class=" w-full  justify-center items-center">
-                                        <div class="relative text-white w-[80%] md:pt-20 pt-2 md:pt-0  mx-auto md:mx-0">
-                                            <div class="absolute top-10 -left-10 w-[200px] h-[200px]   ">
+                            <!-- Content -->
+                            <div class="custom-container pt-10 relative z-20">
+                                <div class="flex justify-between items-end md:flex-nowrap flex-wrap">
+                                    <div class="w-full justify-center items-center">
+                                        <div class="relative text-white w-[80%] md:pt-20 pt-2 md:pt-0 mx-auto md:mx-0">
+                                            <div class="absolute top-10 -left-10 w-[200px] h-[200px] z-10">
                                                 <img src="./img/hero-banner-2.svg" alt="">
                                             </div>
-                                            <h1 class=" fisrt-h1 pb-5" data-aos="fade-up" data-aos-duration="1500">
+                                            <h1 class="fisrt-h1 pb-5" data-aos="fade-up" data-aos-duration="1500">
                                                 Advanced Orthopedic Care to Restore Your Mobility.
                                             </h1>
-                                            <p class="pb-10" data-aos="fade-up" data-aos-duration="2000">Specialized
-                                                treatments for fractures, joint replacements, sports injuries, and more.
-
+                                            <p class="pb-10" data-aos="fade-up" data-aos-duration="2000">
+                                                Specialized treatments for fractures, joint replacements, sports
+                                                injuries, and more.
                                             </p>
                                         </div>
-                                        <div class="  " data-aos="fade-up" data-aos-duration="2500">
+                                        <div data-aos="fade-up" data-aos-duration="2500">
                                             <div
-                                                class="nav-button cloud-button ml-[40px]    md:ml-0  text-white text-[10px] md:text-[16px]">
-
-                                                <a href="contact.html" class="font-semibold text-[white]   ">Book
+                                                class="nav-button cloud-button ml-[40px] md:ml-0 text-white text-[10px] md:text-[16px]">
+                                                <a href="contact.html" class="font-semibold text-[white]">Book
                                                     Appointment &nbsp <i class="fa-solid fa-arrow-right"></i> </a>
-
                                             </div>
-
-                                            <div class="nav-button bg-[transparent]  text-white pt-16 py-5">
-
+                                            <div class="nav-button bg-[transparent] text-white pt-16 py-5">
                                                 <img src="./img/google-review-img.png" class="w-[240px]" alt="">
-
                                             </div>
                                         </div>
-
-
                                     </div>
-                                    <div class="md:w-[50%] w-full flex justify-center items-center relative z-3"
-                                        data-aos="fade-up" data-aos-duration="2000">
-                                        <div class="">
-                                            <img src="./img/main-banner-img-right.png" class="w-full" alt="">
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
                         </section>
                     </div>
                 </div>
+
                 <!-- Slide 5 -->
                 <div class="w-full h-full flex-shrink-0 bg-gray-300 flex items-center justify-center">
                     <div class="w-full h-full flex-shrink-0">
-                        <section
-                            class="main-banner bg-[url('./img/bg-1.png')]  h-full  opacity-90 bg-no-repeat bg-cover relative overflow-hidden">
-                            <div class="absolute top-0 left-0 w-[200px] h-[200px]   ">
+                        <section class="main-banner mainBanner1 mainBannerMobile5 h-full bg-no-repeat bg-cover relative overflow-hidden"
+                            style="background-image: url('./facilities/Neurology1.png');">
+                            <!-- Overlay -->
+                            <!-- <div class="absolute inset-0 bg-black/50 z-0"></div> -->
+
+                            <!-- Floating Elements -->
+                            <div class="absolute top-0 left-0 w-[200px] h-[200px] z-10">
                                 <img src="./img/hero-banner-1.svg" alt="">
                             </div>
-                            <div class="absolute top-0 right-0 w-[200px] h-[200px]  z-10 ">
+                            <div class="absolute top-0 right-0 w-[200px] h-[200px] z-10">
                                 <img src="./img/hero-banner-3.png" alt="">
                             </div>
 
-                            <div class="absolute -top-20 -right-20 w-[700px] h-[600px]  -z-1 hidden md:block">
-                                <img src="./img/Ellipse-1.png" alt="">
-                            </div>
-                            <div class="custom-container pt-10">
-                                <div class="flex justify-between items-end   md:flex-nowrap flex-wrap">
-                                    <div class="md:w-full w-full  justify-center items-center">
-                                        <div class="relative text-white w-[80%] md:pt-20 pt-2 md:pt-0  mx-auto md:mx-0">
-                                            <div class="absolute top-10 -left-10 w-[200px] h-[200px]   ">
+                            <!-- Content -->
+                            <div class="custom-container pt-10 relative z-20">
+                                <div class="flex justify-between items-end md:flex-nowrap flex-wrap">
+                                    <div class="md:w-full w-full justify-center items-center">
+                                        <div class="relative text-white w-[80%] md:pt-20 pt-2 md:pt-0 mx-auto md:mx-0">
+                                            <div class="absolute top-10 -left-10 w-[200px] h-[200px] z-10">
                                                 <img src="./img/hero-banner-2.svg" alt="">
                                             </div>
-                                            <h1 class=" fisrt-h1 pb-5" data-aos="fade-up" data-aos-duration="1500">
+                                            <h1 class="fisrt-h1 pb-5" data-aos="fade-up" data-aos-duration="1500">
                                                 Comprehensive Neurology Solutions for Complex Conditions.
-
                                             </h1>
-                                            <p class="pb-10" data-aos="fade-up" data-aos-duration="2000">Providing
-                                                expert diagnosis and treatment for a wide range of neurological
-                                                disorders.
-
-
+                                            <p class="pb-10" data-aos="fade-up" data-aos-duration="2000">
+                                                Providing expert diagnosis and treatment for a wide range of
+                                                neurological disorders.
                                             </p>
                                         </div>
-                                        <div class="  " data-aos="fade-up" data-aos-duration="2500">
+                                        <div data-aos="fade-up" data-aos-duration="2500">
                                             <div
-                                                class="nav-button cloud-button ml-[40px]    md:ml-0  text-white text-[10px] md:text-[16px]">
-
-                                                <a href="contact.html" class="font-semibold text-[white]   ">Book
+                                                class="nav-button cloud-button ml-[40px] md:ml-0 text-white text-[10px] md:text-[16px]">
+                                                <a href="contact.html" class="font-semibold text-[white]">Book
                                                     Appointment &nbsp <i class="fa-solid fa-arrow-right"></i> </a>
-
                                             </div>
-
-                                            <div class="nav-button bg-[transparent]  text-white pt-16 py-5">
-
+                                            <div class="nav-button bg-[transparent] text-white pt-16 py-5">
                                                 <img src="./img/google-review-img.png" class="w-[240px]" alt="">
-
                                             </div>
                                         </div>
-
-
                                     </div>
-                                    <div class="md:w-[50%] w-full flex justify-center items-center relative z-3"
-                                        data-aos="fade-up" data-aos-duration="2000">
-                                        <div class="">
-                                            <img src="./img/main-banner-img-right.png" class="w-full" alt="">
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
                         </section>
                     </div>
                 </div>
+
             </div>
         </div>
 
@@ -560,59 +491,6 @@
     </div>
 
 
-    <!-- <section class="main-banner bg-[url('./img/bg-1.png')]  opacity-90 bg-no-repeat bg-cover relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-[200px] h-[200px]   ">
-            <img src="./img/hero-banner-1.svg" alt="">
-        </div>
-        <div class="absolute top-0 right-0 w-[200px] h-[200px]  z-10 ">
-            <img src="./img/hero-banner-3.png" alt="">
-        </div>
-
-        <div class="absolute -top-20 -right-20 w-[700px] h-[600px]  -z-1 hidden md:block">
-            <img src="./img/Ellipse-1.png" alt="">
-        </div>
-        <div class="custom-container pt-10">
-            <div class="flex justify-between items-end   md:flex-nowrap flex-wrap">
-                <div class="md:w-[70%] w-full  justify-center items-center">
-                    <div class="relative text-white w-[80%] md:pt-20 pt-2 md:pt-0  mx-auto md:mx-0">
-                        <div class="absolute top-10 -left-10 w-[200px] h-[200px]   ">
-                            <img src="./img/hero-banner-2.svg" alt="">
-                        </div>
-                        <h1 class=" fisrt-h1 pb-5" data-aos="fade-up" data-aos-duration="1500">Best Health Care Solutions in
-                            Hyderabad</h1>
-                        <p class="pb-10" data-aos="fade-up" data-aos-duration="2000"> Experience world-class healthcare
-                            at Nightingale hospital, where expert teams deliver compassionate care in multiple
-                            specialties.
-                        </p>
-                    </div>
-                    <div class="  " data-aos="fade-up" data-aos-duration="2500">
-                        <div
-                            class="nav-button cloud-button ml-[40px]    md:ml-0  text-white text-[10px] md:text-[16px]">
-
-                            <a href="contact.html" class="font-semibold text-[white]   ">Book Appointment &nbsp <i
-                                    class="fa-solid fa-arrow-right"></i> </a>
-
-                        </div>
-
-                        <div class="nav-button bg-[transparent]  text-white pt-16 py-5">
-
-                            <img src="./img/google-review-img.png" class="w-[240px]" alt="">
-
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="md:w-[50%] w-full flex justify-center items-center relative z-3" data-aos="fade-up"
-                    data-aos-duration="2000">
-                    <div class="">
-                        <img src="./img/main-banner-img-right.png" class="w-full" alt="">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section> -->
 
     <!-- our services -->
 
@@ -1016,7 +894,7 @@
 
                     <!-- Hidden services (7th and beyond) -->
                     <div class="hidden-items hidden flex justify-start items-center gap-4 flex-wrap">
-                       
+
                         <div class="pt-5 items-center text-center md:w-[30%] w-full lg:w-[24%] services-cart bg-[url(./img/service_card_bg.png)] bg-no-repeat bg-cover rounded-2xl pt-0 servies-cart overflow-hidden"
                             data-aos="fade-up" data-aos-duration="1000">
                             <div class="flex justify-center items-center">
@@ -1233,8 +1111,8 @@
 
             <div class="text-center  md:w-[20%] w-full" data-aos="fade-up" data-aos-duration="1500">
                 <div class="w-[230px] mx-auto my-3">
-                    <h1 class="text-6xl font-bold"><span  id="starsCount" class="text-[#3B9C43]"
-                            countTo="69">0</span> <span><span style="font-size: 30px;">Lakhs <span style="font-size: 48px;">+</span>
+                    <h1 class="text-6xl font-bold"><span id="starsCount" class="text-[#3B9C43]" countTo="69">0</span>
+                        <span><span style="font-size: 30px;">Lakhs <span style="font-size: 48px;">+</span>
                             </span></span>
                     </h1>
                 </div>
@@ -2012,19 +1890,20 @@
     </section>
 
 
-<section class="bg-[#015C88]">
-    <div class="custom-container py-3 w-[80%] md:w-[100%]">
-        <div class="flex justify-between items-center">
-            <div class="">
-                <p class="text-white text-[9px] md:text-[16px]">Copyright © 2024  Nightingale Hospital All Rights Reserved.</p>
-            </div>
-            <div class="flex space-x-4 md:space-x-8 text-white">
-                <p>Designed and Developed by <a href="https://snaptics.agency/">Snaptics</a></p>
+    <section class="bg-[#015C88]">
+        <div class="custom-container py-3 w-[80%] md:w-[100%]">
+            <div class="flex justify-between items-center">
+                <div class="">
+                    <p class="text-white text-[9px] md:text-[16px]">Copyright © 2024 Nightingale Hospital All Rights
+                        Reserved.</p>
+                </div>
+                <div class="flex space-x-4 md:space-x-8 text-white">
+                    <p>Designed and Developed by <a href="https://snaptics.agency/">Snaptics</a></p>
 
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -2117,27 +1996,23 @@
         const totalSlides = slides.children.length;
         let currentSlide = 0;
 
-        // Function to update the slide position
         function updateSlidePosition() {
             slides.style.transform = `translateX(-${currentSlide * 100}%)`;
         }
 
-        // Function to go to the next slide
         function nextSlide() {
             currentSlide = (currentSlide + 1) % totalSlides;
             updateSlidePosition();
         }
 
-        // Function to go to the previous slide
         function prevSlide() {
             currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
             updateSlidePosition();
         }
 
-        // Auto-slide functionality
         setInterval(() => {
-            nextSlide(); // Automatically go to the next slide
-        }, 5000); // Change slide every 5 seconds
+            nextSlide();
+        }, 5000); 
     </script>
 
 

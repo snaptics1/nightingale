@@ -2078,3 +2078,59 @@ h1.fisrt-h1.pb-5.aos-init.aos-animate {
 html {
   scroll-behavior: smooth;
 }
+.mainBanner1 {
+  position: relative;
+  background-image: url('../facilities/Generic1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mainBanner1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black; /* Overlay color */
+  opacity: 0.3; /* Overlay transparency */
+  z-index: 1; /* Place the overlay behind the content */
+}
+.mainBanner2 {
+  background-image: url('../facilities/General Surgery + Medicine1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.mainBanner2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black; /* Overlay color */
+  opacity: 0.3; /* Overlay transparency */
+  z-index: 1; /* Place the overlay behind the content */
+}
+@media screen and (max-width:575px){
+  h1.fisrt-h1.pb-5.aos-init.aos-animate {
+    font-size: 28px;
+}
+.mainBannerMobile1{
+  background-image: url('../facilities/Generic\ \ Mobile.png');
+}
+.mainBannerMobile2{
+  background-image: url('../facilities/General\ Surgery\ +\ Medicine\ \ Mobile.png');
+}
+.mainBannerMobile3{
+  background-image: url('../facilities/Gynaecology\ \ Mobile.png');
+}
+.mainBannerMobile4{
+  background-image: url('../facilities/Orthopaedics\ \ Mobile.png');
+}
+.mainBannerMobile5{
+  background-image: url('../facilities/Neurology\ Mobile.png');
+}
+}
