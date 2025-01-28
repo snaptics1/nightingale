@@ -2136,3 +2136,14 @@ html {
   background-image: url('../facilities/Neurology\ Mobile.png');
 }
 }
+.swiper-button-next,
+.swiper-button-prev {
+  width: 16px !important; /* Adjust size */
+  height: 16px !important; /* Adjust size */
+  font-size: 28px !important; /* Adjust font size */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 28px !important; /* Adjust arrow size */
+}
